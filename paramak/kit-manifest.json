@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "fcr-2026-09-26",
+  "id": "paramak",
+  "license": "MIT OR Apache-2.0; third-party notices retained separately",
+  "files": [
+    {
+      "path": "advanced/reproduce_geometry.py",
+      "sha256": "ca861e341b75d68212efc9305b442b26e4be649fa5ce985d6e1866a496ef234d",
+      "bytes": 23979
+    },
+    {
+      "path": "advanced/requirements-recorded.txt",
+      "sha256": "ecb2581d0e54b3488710153d8802c47d50f79623358af905f81fef7c1d3efa51",
+      "bytes": 826
+    },
+    {
+      "path": "advanced/source/examples/spherical_tokamak_from_plasma_minimal.py",
+      "sha256": "d0508cf2ca98781001a9a6d3cffe51eb90b29053bac2ebae2a51b12547a01f5d",
+      "bytes": 598
+    },
+    {
+      "path": "advanced/source/examples/spherical_tokamak_from_plasma_with_pf_magnets_and_divertors.py",
+      "sha256": "743d7d1a6a2f693d735cbccec66275d10e471bbc8b1829a6814e8d3ca1fd281b",
+      "bytes": 1391
+    },
+    {
+      "path": "advanced/source/examples/tokamak_from_plasma_minimal.py",
+      "sha256": "6fb5e00d9f162e8c9664eda39ee1293103c67c68701ff83f36ece57a1b862b80",
+      "bytes": 699
+    },
+    {
+      "path": "advanced/source/examples/tokamak_unstructured_mesh_simulation.py",
+      "sha256": "a5639d811a9c622f5443b2484d70060f9c3c204ded0384320a77ab88443eac6e",
+      "bytes": 6257
+    },
+    {
+      "path": "advanced/source/examples/tokamak_with_pf_tf_magnets_divertor.py",
+      "sha256": "97e9cf1e0a768d996cb7d98365500ba05fdb076f10f450aff0561464e68c5a57",
+      "bytes": 2505
+    },
+    {
+      "path": "advanced/source/LICENSE",
+      "sha256": "144aa405036e7401b989355eb2f8713ba7b87861e50e4c37e888ffea340f61d8",
+      "bytes": 1090
+    },
+    {
+      "path": "advanced/source/pyproject.toml",
+      "sha256": "8c88f5f2baa1e9f0db30946cef5fefa13b81d22af9b74789f75465f155572e26",
+      "bytes": 314
+    },
+    {
+      "path": "advanced/source/README.md",
+      "sha256": "76fb790089524681cb1531abef8f845842b09e4e7933e0b667ef0b6f10584444",
+      "bytes": 1349
+    },
+    {
+      "path": "advanced/source/src/_version.py",
+      "sha256": "0d0a022e70ab164dbcfac3b091390aeaadb8a252b2b9b702e2234dee5bd46171",
+      "bytes": 569
+    },
+    {
+      "path": "advanced/source/src/paramak/__init__.py",
+      "sha256": "ec32c6daddf23679b0088036160f139b8cf45686688e1400edc43924c07a7567",
+      "bytes": 1704
+    },
+    {
+      "path": "advanced/source/src/paramak/assemblies/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "advanced/source/src/paramak/assemblies/assembly.py",
+      "sha256": "7844792eb3fc23aa9f9cc3a2db59f5b6632a32912a287227a24790cef33d2886",
+      "bytes": 4800
+    },
+    {
+      "path": "advanced/source/src/paramak/assemblies/spherical_tokamak.py",
+      "sha256": "9e67e0b3834acb748ef313f245f4c9495ab8d5525e3835447a25c5f4a42789d4",
+      "bytes": 12283
+    },
+    {
+      "path": "advanced/source/src/paramak/assemblies/tokamak.py",
+      "sha256": "004aecffd264db8ce6cb6c9a6f84fd8e4f90f154aabf086c0fa2af5b8687dce4",
+      "bytes": 14158
+    },
+    {
+      "path": "advanced/source/src/paramak/utils.py",
+      "sha256": "b16fe639dd9c2ab8ef34cdbed32f1e2b41f457d3605f080e169880a9ea8aaba6",
+      "bytes": 11045
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/blanket_constant_thickness_arc_h.py",
+      "sha256": "2d77c7542db1c23650062776875a5f8ca6074390e64002c0217f1ad2d6130b3f",
+      "bytes": 1386
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/blanket_from_plasma.py",
+      "sha256": "6c907a27accf6dd5dba63123fbc05765ab047e9c2bb6852cfcc4f38183773cc9",
+      "bytes": 10474
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/center_column_shield_cylinder.py",
+      "sha256": "32a1ff8bdd53c57b94da9dc66118a386085fbf46b38a6399fdd749d6b7840235",
+      "bytes": 2829
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/constant_thickness_dome.py",
+      "sha256": "3a18257d7f939297182f3d23eb058b5538a23441409ec5e951ab0588d74fae4c",
+      "bytes": 7953
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/cutting_wedge.py",
+      "sha256": "8d6917623ee3419d35f441ea2380f43c7b885d25b030773bac959203a0e5448b",
+      "bytes": 1366
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/dished_vacuum_vessel.py",
+      "sha256": "05652ce7e9df9a2924493cab9f701527e2301172cae2a75ff6075ac9773d7208",
+      "bytes": 4645
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/plasma_simplified.py",
+      "sha256": "9f15d6ee949304fad6de9aa1ba96e415c96af654e3d1abfe8c45d66f8b7369c8",
+      "bytes": 2632
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/poloidal_field_coil_case.py",
+      "sha256": "84bbf4ccfd11c40fcb9ac206baf21a3f838ee5bb40e837d56a04c9194fb3eb4d",
+      "bytes": 2721
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/poloidal_field_coil.py",
+      "sha256": "6b45855ab69cb971abf5cea15e2547893a963211756b0ada3172ef3bdc5d73f7",
+      "bytes": 1444
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/revolved_shape.py",
+      "sha256": "c6946458a81f2d4fe8282bae3c84e05dc263e4c148cdada4ef8cbef4a604e466",
+      "bytes": 2445
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/toroidal_field_coil_princeton_d.py",
+      "sha256": "064a2b58468097f4903f901145f6cb09587e70558113f34e6c1d9d7df3b443cf",
+      "bytes": 8811
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/toroidal_field_coil_rectangle.py",
+      "sha256": "8fd50bdb6b2ff78390e2d8037e73e2b19893086a8710ba106fa679d2017eec76",
+      "bytes": 5040
+    },
+    {
+      "path": "advanced/source/src/paramak/workplanes/u_shaped_dome.py",
+      "sha256": "bfd3d02bd3d88315168321d67cf9679e5d95fd798b8b024127263e5c67c8740f",
+      "bytes": 4107
+    },
+    {
+      "path": "check.py",
+      "sha256": "8e752d07393ee81923bb1c18a24955a7fdac3e3a74c2fbb4d282d5dcbb133ed2",
+      "bytes": 2162
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "89dfccc78a9fcda5b55451f7c314cb98daa8e8b792782fc345307b5c480a7871",
+      "bytes": 561
+    },
+    {
+      "path": "comparison.html",
+      "sha256": "3e8f30fe35a5c5246f97e0a9087005f379a393abf8bd1dc6e35a369cbbb857fb",
+      "bytes": 2027
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6bdf1fbf209335608d98562bf60987d59cebce5e536241133644bc0cecf030ff",
+      "bytes": 1126
+    },
+    {
+      "path": "evidence/baseline-checks.json",
+      "sha256": "fa5800bf00989cf5733c6b2433808ded9eff98796be24ff3baf99bd10d54918e",
+      "bytes": 16650
+    },
+    {
+      "path": "evidence/comparison.json",
+      "sha256": "137b4529956b2fcb95a5344bb7e432c33dd6d1b23b8a060a9ce50e86c121a9df",
+      "bytes": 1942
+    },
+    {
+      "path": "evidence/elongation-1p8-checks.json",
+      "sha256": "de6661bdb0112ee343b4756cf96bf0b3b87298b7ebf079a2da09c4d3c19c3b95",
+      "bytes": 16733
+    },
+    {
+      "path": "evidence/environment-lock.json",
+      "sha256": "a70b92d5f740ec6599da6251a1a9bf55d55aaf1a5d75ca50656d4a48e5cfd107",
+      "bytes": 17497
+    },
+    {
+      "path": "images/baseline.png",
+      "sha256": "bec0960e23f62eddef099991bd11273328ccb30f2ed170fc9c28221da66b32a5",
+      "bytes": 111002
+    },
+    {
+      "path": "images/elongation-1p8.png",
+      "sha256": "aa39349239bdbe42cee5ccddb260b88cc318f4ae810c30be02027671dd3f81ae",
+      "bytes": 108303
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a5e9f9b1575301c7a7a03508fdaa2e05a918cc17fd21c6e898096a96d6a34f61",
+      "bytes": 9142
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "d34969654536366a6be609086d8bf321d0ef75f886321481511568ad0310639e",
+      "bytes": 1068
+    },
+    {
+      "path": "NOTICE.txt",
+      "sha256": "58e2fbda9c1f592df536ba92ab8e612d54d05ef98c78b5621746c595ca49acd4",
+      "bytes": 1242
+    },
+    {
+      "path": "README.md",
+      "sha256": "fe50533f82f72b7a1383cb19588d78c64a8ae0ce6367b2a6cb5e092e30d4909b",
+      "bytes": 2939
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "dbcb73a66108afe4927706e2028e3e1d14a4e1a600892839ccd3dcab0cfaebdc",
+      "bytes": 1813
+    },
+    {
+      "path": "view.py",
+      "sha256": "c99c8cdc199b20f3d135893d951dedacf9d11b32188798ea28a810f824be0fa9",
+      "bytes": 2283
+    }
+  ]
+}

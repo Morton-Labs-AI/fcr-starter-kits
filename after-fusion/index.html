@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>After fusion · Fusion Control Room</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <main>
+    <a href="https://fusion.mortonlabs.ai">FUSION CONTROL ROOM / STARTER KIT</a>
+    <h1>After fusion</h1>
+    <p>A reconstructed target, a prescribed plasma, recorded neutron tracks,
+      and a calculated thermal response. Explore each model at your own pace.</p>
+    <p><strong>Prepared model playback.</strong> This browser does not run a solver.
+      The plasma and neutron source are separate examples. Transport deposition
+      and thermal response are coupled; this is not validated reactor performance.</p>
+    <img id="poster" src="/storyboard.jpg" alt="Storyboard of the target, plasma, neutron transport, wall conduction, and heat removal">
+    <button id="load" type="button">Load the 3D view</button>
+    <p id="status" role="status">The poster and explanations remain available without WebGL.</p>
+    <section id="controls" hidden aria-label="Playback controls">
+      <label>View <select id="stage">
+        <option value="target">Reconstructed target</option>
+        <option value="capsule">Capsule detail</option>
+        <option value="plasma">Prescribed plasma</option>
+        <option value="transport">Recorded transport</option>
+        <option value="thermal">Thermal response</option>
+      </select></label>
+      <label>Model time <input id="time" type="range" min="0" max="1000" value="0"></label>
+      <button id="play" type="button">Play this stage</button>
+      <button id="reset" type="button">Reset camera</button>
+      <output id="clock">Reconstruction · NOT A SIMULATION</output>
+    </section>
+    <div id="viewport" aria-label="Interactive prepared model viewer"></div>
+    <p id="scope">Target geometry is a literature-based reconstruction. No target-specific implosion was calculated.</p>
+    <details open><summary>How to read this example</summary>
+      <ul>
+        <li>Drag to orbit, scroll to zoom, and right-drag to pan. Nothing plays automatically.</li>
+        <li>Plasma colors show temperature; opacity is a density display function, not a radiation-transfer image.</li>
+        <li>Transport shows a direction-selected subset of recorded neutron and photon histories. Heating uses all 64,000 histories.</li>
+        <li>Wall and coolant colors have separate normalization. Equal colors do not mean equal temperature rises.</li>
+        <li>The heat removed fraction is deposited energy sent to a sink, not electrical efficiency.</li>
+      </ul>
+    </details>
+    <p>Read README.md, evidence/, and public/target/manifest.json for assumptions,
+      units, source references, and advanced reproduction instructions.</p>
+    <noscript><p>JavaScript is off. The prepared JSON datasets and this page's explanations remain available.</p></noscript>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

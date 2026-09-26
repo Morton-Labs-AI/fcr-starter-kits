@@ -1,0 +1,17 @@
+{
+  "checks": "passed",
+  "neutronPrimaries": 192,
+  "savedParticleTracks": 737,
+  "maxFirstFlightRelativeSpeedError": 1.9984014443252818e-15,
+  "hydroEnergyResidual": -2.7637349473006797e-16,
+  "thermalEnergyResidual": -4.433778743352713e-14,
+  "neutronToThermalConservativeTransfer": true,
+  "physicalTimeMonotonic": true,
+  "camera": "C1 log-distance path; registered SI world with CPU double rebasing",
+  "maxLogDistanceStepPerMillisecond": 0.038426461980186816,
+  "files": {
+    "hydro": "13124c8eef46f4e8e9b70764b5278988e9027698aeff2ec5e50830ec30eee2a6",
+    "neutrons": "4ac9794c5f855ff5529c2b01125d92df00f3ff2e233620dc89417c568a53d09d",
+    "thermal": "d682b0bcd0f665a18d0a192a460fc1c55e67f66ec37edd432578b5ee18537122"
+  }
+}

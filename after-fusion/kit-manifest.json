@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "fcr-2026-09-26",
+  "id": "after-fusion",
+  "license": "MIT OR Apache-2.0; third-party notices retained separately",
+  "files": [
+    {
+      "path": "advanced/hydro.py",
+      "sha256": "b815a26d678c473e60c5df00749a1ceb44e122a4f91045249c9ee8bc8256f7d7",
+      "bytes": 4538
+    },
+    {
+      "path": "advanced/neutrons.py",
+      "sha256": "ca4bbdb75e426e9b4b4871de065b1e4f4e4fb6eb5199dd0f47aaf026459da2f7",
+      "bytes": 4658
+    },
+    {
+      "path": "advanced/thermal.py",
+      "sha256": "0f6c3a18740db349fae03b4b925435779891220f0a632dbb649cf80386856a87",
+      "bytes": 3754
+    },
+    {
+      "path": "check.mjs",
+      "sha256": "c9bf4a43887fe9afa2022dfbb2c26156da1d87f4f831b1a119e0a794431404a8",
+      "bytes": 2765
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "89dfccc78a9fcda5b55451f7c314cb98daa8e8b792782fc345307b5c480a7871",
+      "bytes": 561
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6bdf1fbf209335608d98562bf60987d59cebce5e536241133644bc0cecf030ff",
+      "bytes": 1126
+    },
+    {
+      "path": "evidence/hydro-run.json",
+      "sha256": "8d149967fe91b40b55035cd5d9017d85a243296742b89ced8ff8edae538f8b69",
+      "bytes": 1174
+    },
+    {
+      "path": "evidence/model-verification.json",
+      "sha256": "512c145601bc5c04feab5078fa759237d5050bee22cfe43168339923c93fabf5",
+      "bytes": 733
+    },
+    {
+      "path": "evidence/neutron-run.json",
+      "sha256": "0389a169168badb447bca6a1fc5488d4e843f1ad77e444894b0b79a5b08a825b",
+      "bytes": 6416
+    },
+    {
+      "path": "evidence/thermal-run.json",
+      "sha256": "0a2683ffc3cd59032d5c07fbe4ee7cd74549e24a5f8caec8063c5690a8bb9794",
+      "bytes": 1024
+    },
+    {
+      "path": "index.html",
+      "sha256": "dc32cb4ca4ee5bdc5b887371f1d6787089d882abf13d9b82171a18b7ba2516ec",
+      "bytes": 3043
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a5e9f9b1575301c7a7a03508fdaa2e05a918cc17fd21c6e898096a96d6a34f61",
+      "bytes": 9142
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "d34969654536366a6be609086d8bf321d0ef75f886321481511568ad0310639e",
+      "bytes": 1068
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "30a504317f16035faabf551809af4b9c8c945ce960e7e72eba4b8b2bc2b39a74",
+      "bytes": 28440
+    },
+    {
+      "path": "package.json",
+      "sha256": "11d1849ebf0d10ef5a1416e4a33e4649e0902b2b642b477113368561b2375c29",
+      "bytes": 507
+    },
+    {
+      "path": "public/data/hydro.json",
+      "sha256": "13124c8eef46f4e8e9b70764b5278988e9027698aeff2ec5e50830ec30eee2a6",
+      "bytes": 4140872
+    },
+    {
+      "path": "public/data/neutrons.json",
+      "sha256": "4ac9794c5f855ff5529c2b01125d92df00f3ff2e233620dc89417c568a53d09d",
+      "bytes": 3761087
+    },
+    {
+      "path": "public/data/thermal.json",
+      "sha256": "d682b0bcd0f665a18d0a192a460fc1c55e67f66ec37edd432578b5ee18537122",
+      "bytes": 365280
+    },
+    {
+      "path": "public/storyboard.jpg",
+      "sha256": "9a8066267a606649a30f42a736097e3efa3563a7dd6b8f8321d2fed1ebc9c604",
+      "bytes": 248873
+    },
+    {
+      "path": "public/target/assembly-cutaway.glb",
+      "sha256": "a6b5485452b014303c621942e1a18cb474bcd5c5565a2e686fb0c43bf79d5ba2",
+      "bytes": 417108
+    },
+    {
+      "path": "public/target/capsule-fine-cutaway.glb",
+      "sha256": "a23690f92beac9a5e6f887794d8d3122775e3032a215373e3723e88ddf01a78a",
+      "bytes": 9640564
+    },
+    {
+      "path": "public/target/manifest.json",
+      "sha256": "b77c40c555b190903dec35b8f54bd33a2b0202be378e7bad068efc0e3b40ae55",
+      "bytes": 57802
+    },
+    {
+      "path": "README.md",
+      "sha256": "adaba46d189f64e4878f1595a4cec28805ef2bc1c98ef42aa7cbb410d4c52dc2",
+      "bytes": 4006
+    },
+    {
+      "path": "src/data.ts",
+      "sha256": "2076eed5749788fa4d9d1e63033daee1f69ac1a280265d1fd81b56851893e123",
+      "bytes": 1198
+    },
+    {
+      "path": "src/fields.ts",
+      "sha256": "ed2d2c6b7ad84efbb527facbdc0ec52e6be180a3cdac7e483daf9ab4c1665505",
+      "bytes": 4509
+    },
+    {
+      "path": "src/journey.ts",
+      "sha256": "30e2b91d975a0a7e1c224aac2639bbd048b5d7f3db93ceb558940b67482407b7",
+      "bytes": 1971
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "68dcb0c7bc0b18a7c8612e6aec84a74d3bb906f2884feb1b2927b1e7ad19bce3",
+      "bytes": 1092
+    },
+    {
+      "path": "src/particles.ts",
+      "sha256": "d5c64297b64b6828b11bc2a7b9b251d1930812df5eced1f3b3463ac6df7cc72d",
+      "bytes": 4859
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "40d52d420a4b91b81e3814d0d5479cd644f53af47c67826d9fdf6cff492f7fe7",
+      "bytes": 1119
+    },
+    {
+      "path": "src/viewer.ts",
+      "sha256": "19d8694f2c1b2872889467621257106312aaf05dbb51bfb4564b91cc25ca9e4a",
+      "bytes": 6979
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "dbcb73a66108afe4927706e2028e3e1d14a4e1a600892839ccd3dcab0cfaebdc",
+      "bytes": 1813
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "f8e1dbe660345d5c1ebf1d2fdc840dcaf1bcceb6b26c1eea1f523a79617b1ba1",
+      "bytes": 295
+    }
+  ]
+}

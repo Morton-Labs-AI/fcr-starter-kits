@@ -1,0 +1,67 @@
+{
+  "model_record_id": "r2-tokamak-2026-09-05-a:model:paramak-tokamak-minimal",
+  "baseline_variant_hash": "860455008c04b492e8e06afb8bb9e66a078df393c26e19074231e0a51d8699c1",
+  "edited_variant_hash": "423567f6a81d59f8a6e330ec52e8d719b2a88568f3a2c76f2dbe74a8ec1793ba",
+  "edit": {
+    "parameter": "elongation",
+    "original": 2,
+    "edited": 1.8,
+    "unit": "dimensionless",
+    "accepted_discrete_values": [
+      1.8,
+      2.0
+    ],
+    "continuous_interval_verified": false,
+    "physical_feasibility_bounds": {
+      "min": null,
+      "max": null
+    }
+  },
+  "component_volume_changes_m3": [
+    {
+      "id": "layer_1",
+      "baseline": 2.4033183799961857,
+      "variant": 2.2619467105846454,
+      "difference": -0.14137166941154033
+    },
+    {
+      "id": "layer_2",
+      "baseline": 10.414379646650138,
+      "variant": 9.801769079200133,
+      "difference": -0.6126105674500053
+    },
+    {
+      "id": "layer_3",
+      "baseline": 50.53826036273818,
+      "variant": 47.83200229721842,
+      "difference": -2.706258065519755
+    },
+    {
+      "id": "layer_4",
+      "baseline": 372.00922111748207,
+      "variant": 356.17201882937763,
+      "difference": -15.837202288104436
+    },
+    {
+      "id": "layer_5",
+      "baseline": 36.32300387668588,
+      "variant": 35.034216335033555,
+      "difference": -1.2887875416523258
+    },
+    {
+      "id": "plasma",
+      "baseline": 184.12615735258618,
+      "variant": 165.71354137286406,
+      "difference": -18.41261597972212
+    }
+  ],
+  "plasma_volume_ratio": 0.8999999986723043,
+  "plasma_display_volume_ratio": 0.9000016455679074,
+  "expected_plasma_volume_ratio": 0.9,
+  "plasma_ratio_relative_tolerance": 1e-05,
+  "plasma_geometric_scaling_passed": true,
+  "fcr_public_projection": {
+    "source_sha256": "b8800fbf536ceba1a6d808769a6dde9fcd29cfff59a1a466e67285850398598d",
+    "edits": "Private local locators removed; geometry and runtime records unchanged."
+  }
+}

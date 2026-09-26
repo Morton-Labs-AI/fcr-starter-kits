@@ -1,0 +1,2221 @@
+{
+  "schema_version": "nif-target-manifest/2",
+  "id": "nif-n221204",
+  "title": "NIF ignition target \u00b7 December 2022",
+  "baseline": "December 5, 2022 \u00b7 N221204",
+  "unit": "m",
+  "up_axis": "Y",
+  "parameters": {
+    "hohlraum_inner_radius": {
+      "value": 3.2,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, target description"
+    },
+    "hohlraum_length": {
+      "value": 11.24,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, target description"
+    },
+    "entrance_radius": {
+      "value": 1.55,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "Fig. 1 and Appendix A; 3.1 mm diameter"
+    },
+    "capsule_inner_radius": {
+      "value": 1.05,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3: explicitly inner radius; do not interpret 2.1 mm as outer diameter"
+    },
+    "hdc_inner_thickness": {
+      "value": 0.008,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, layer description"
+    },
+    "hdc_middle_thickness": {
+      "value": 0.015,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, buried layer thickness"
+    },
+    "hdc_outer_thickness": {
+      "value": 0.063,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, layer description"
+    },
+    "fuel_thickness": {
+      "value": 0.0645,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3, solid cryogenic fuel layer"
+    },
+    "membrane_thickness": {
+      "value": 4.5e-05,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "p. 3: two 45 nm Formvar membranes; contour is not specified"
+    },
+    "fill_tube_outer_radius": {
+      "value": 0.001,
+      "unit": "mm",
+      "status": "published",
+      "source": "prl-2024",
+      "locator": "Appendix A: 2 micrometre diameter"
+    },
+    "fill_tube_inner_radius": {
+      "value": 0.0005,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "fill-tube-2018",
+      "locator": "Bore is an illustrative assumption; not measured from photograph"
+    },
+    "fill_tube_tip_length": {
+      "value": 1.0,
+      "unit": "mm",
+      "status": "reference",
+      "source": "fill-tube-2018",
+      "locator": "2018 tube geometry; not a shot-specific dimension"
+    },
+    "hohlraum_wall_thickness": {
+      "value": 0.04,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "assembly-2025",
+      "locator": "Display wall assumption; not an as-built specification"
+    },
+    "gold_lining_thickness": {
+      "value": 0.002,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "prl-2024",
+      "locator": "Gold lining is documented; its modeled thickness is illustrative"
+    },
+    "fill_hole_radius": {
+      "value": 0.0011,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "fill-tube-2018",
+      "locator": "Visual clearance around the tube; not a manufacturing tolerance"
+    },
+    "chamber_radius": {
+      "value": 5000,
+      "unit": "mm",
+      "status": "reference",
+      "source": "chamber",
+      "locator": "Nominal 10 m chamber diameter represented as cavity envelope; surface convention unspecified"
+    },
+    "chamber_wall_thickness": {
+      "value": 100,
+      "unit": "mm",
+      "status": "published",
+      "source": "chamber",
+      "locator": "10 cm aluminium panels"
+    }
+  },
+  "components": [
+    {
+      "id": "hohlraum-wall",
+      "name": "Hohlraum wall",
+      "parent": "hohlraum",
+      "material": "Gold-lined depleted uranium",
+      "color": "#d4a550",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "hohlraum_inner_radius",
+        "hohlraum_length",
+        "hohlraum_wall_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Published cavity envelope; outer wall thickness is estimated. Exterior diagnostic windows are illustrative.",
+      "bounds_m": [
+        [
+          -0.003242,
+          -0.00558,
+          -0.003242
+        ],
+        [
+          0.003242,
+          0.00558,
+          0.003242
+        ]
+      ],
+      "dimensions_mm": [
+        6.484,
+        6.484,
+        11.16
+      ],
+      "explode_m": [
+        0,
+        0,
+        -0.004
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 9.007413270194007,
+      "cad_valid": true
+    },
+    {
+      "id": "gold-lining",
+      "name": "Inner gold lining",
+      "parent": "hohlraum",
+      "material": "Gold",
+      "color": "#f6cc70",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "gold_lining_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "The presence of a gold lining is published. Its 2 \u00b5m thickness here is an assumption.",
+      "bounds_m": [
+        [
+          -0.003202,
+          -0.00558,
+          -0.003202
+        ],
+        [
+          0.003202,
+          0.00558,
+          0.003202
+        ]
+      ],
+      "dimensions_mm": [
+        6.404,
+        6.404,
+        11.16
+      ],
+      "explode_m": [
+        0,
+        0,
+        -0.002
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.4474255904748077,
+      "cad_valid": true
+    },
+    {
+      "id": "entrance-upper",
+      "name": "Upper laser entrance annulus",
+      "parent": "hohlraum",
+      "material": "High-Z end wall",
+      "color": "#d9ae65",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "entrance_radius",
+        "hohlraum_length",
+        "hohlraum_wall_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Published opening diameter. Annulus thickness and edge profile are estimated.",
+      "bounds_m": [
+        [
+          -0.003242,
+          0.00558,
+          -0.003242
+        ],
+        [
+          0.003242,
+          0.00562,
+          0.003242
+        ]
+      ],
+      "dimensions_mm": [
+        6.484,
+        6.484,
+        0.040000000000000036
+      ],
+      "explode_m": [
+        0,
+        0.004,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 1.018889371889433,
+      "cad_valid": true
+    },
+    {
+      "id": "entrance-lower",
+      "name": "Lower laser entrance annulus",
+      "parent": "hohlraum",
+      "material": "High-Z end wall",
+      "color": "#d9ae65",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "entrance_radius",
+        "hohlraum_length",
+        "hohlraum_wall_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Published opening diameter. Annulus thickness and edge profile are estimated.",
+      "bounds_m": [
+        [
+          -0.003242,
+          -0.00562,
+          -0.003242
+        ],
+        [
+          0.003242,
+          -0.00558,
+          0.003242
+        ]
+      ],
+      "dimensions_mm": [
+        6.484,
+        6.484,
+        0.040000000000000036
+      ],
+      "explode_m": [
+        0,
+        -0.004,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 1.018889371889433,
+      "cad_valid": true
+    },
+    {
+      "id": "hdc-outer",
+      "name": "Outer diamond shell",
+      "parent": "capsule",
+      "material": "High-density carbon",
+      "color": "#8ecedb",
+      "evidence": "published",
+      "parameter_keys": [
+        "capsule_inner_radius",
+        "hdc_outer_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Nominal concentric layer from published dimensions. Fill-hole clearance is estimated; colors distinguish regions.",
+      "bounds_m": [
+        [
+          -0.0011359999999999999,
+          -0.0011359999999999999,
+          -0.0011359999999999999
+        ],
+        [
+          0.0011359994674294525,
+          0.0011359999999999999,
+          0.0011359999999999999
+        ]
+      ],
+      "dimensions_mm": [
+        2.2719994674294526,
+        2.272,
+        2.272
+      ],
+      "explode_m": [
+        0.0025,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.9660497179545287,
+      "cad_valid": true
+    },
+    {
+      "id": "hdc-middle",
+      "name": "Buried capsule layer",
+      "parent": "capsule",
+      "material": "Buried doped high-density carbon",
+      "color": "#bc98df",
+      "evidence": "published",
+      "parameter_keys": [
+        "capsule_inner_radius",
+        "hdc_middle_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Nominal concentric layer from published dimensions. Fill-hole clearance is estimated; colors distinguish regions.",
+      "bounds_m": [
+        [
+          -0.001073,
+          -0.001073,
+          -0.001073
+        ],
+        [
+          0.0010729994361601501,
+          0.001073,
+          0.001073
+        ]
+      ],
+      "dimensions_mm": [
+        2.14599943616015,
+        2.146,
+        2.146
+      ],
+      "explode_m": [
+        0.0013,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.21400064781733796,
+      "cad_valid": true
+    },
+    {
+      "id": "hdc-inner",
+      "name": "Inner diamond shell",
+      "parent": "capsule",
+      "material": "High-density carbon",
+      "color": "#d3eff4",
+      "evidence": "published",
+      "parameter_keys": [
+        "capsule_inner_radius",
+        "hdc_inner_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Nominal concentric layer from published dimensions. Fill-hole clearance is estimated; colors distinguish regions.",
+      "bounds_m": [
+        [
+          -0.0010580000000000001,
+          -0.0010580000000000001,
+          -0.0010580000000000001
+        ],
+        [
+          0.0010579994281661972,
+          0.0010580000000000001,
+          0.0010580000000000001
+        ]
+      ],
+      "dimensions_mm": [
+        2.115999428166197,
+        2.116,
+        2.116
+      ],
+      "explode_m": [
+        0.0005,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.11168196317378953,
+      "cad_valid": true
+    },
+    {
+      "id": "dt-ice",
+      "name": "Frozen D\u2013T fuel",
+      "parent": "capsule",
+      "material": "Frozen deuterium\u2013tritium",
+      "color": "#72dbb1",
+      "evidence": "published",
+      "parameter_keys": [
+        "capsule_inner_radius",
+        "fuel_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "Nominal concentric layer from published dimensions. Fill-hole clearance is estimated; colors distinguish regions.",
+      "bounds_m": [
+        [
+          -0.0010500000000000002,
+          -0.0010500000000000002,
+          -0.0010500000000000002
+        ],
+        [
+          0.0010499994238093657,
+          0.0010500000000000002,
+          0.0010500000000000002
+        ]
+      ],
+      "dimensions_mm": [
+        2.0999994238093658,
+        2.1,
+        2.1
+      ],
+      "explode_m": [
+        -0.0007,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.8398410445410969,
+      "cad_valid": true
+    },
+    {
+      "id": "dt-gas",
+      "name": "Central D\u2013T gas",
+      "parent": "capsule",
+      "material": "Deuterium\u2013tritium gas",
+      "color": "#b7e3d1",
+      "evidence": "published",
+      "parameter_keys": [
+        "capsule_inner_radius",
+        "fuel_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "A bounded volume representing the pre-shot gas region, not a solid component.",
+      "bounds_m": [
+        [
+          -0.0009855,
+          -0.0009855,
+          -0.0009855
+        ],
+        [
+          0.0009855,
+          0.0009855,
+          0.0009855
+        ]
+      ],
+      "dimensions_mm": [
+        1.971,
+        1.971,
+        1.971
+      ],
+      "explode_m": [
+        -0.0015,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 4.0092071402493055,
+      "cad_valid": true
+    },
+    {
+      "id": "tent-upper",
+      "name": "Upper suspension membrane",
+      "parent": "support",
+      "material": "Formvar polymer",
+      "color": "#d7dbe2",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "membrane_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "45 nm normal thickness is published; smooth drape, contact and 100 nm clearance are inferred.",
+      "bounds_m": [
+        [
+          -0.003188001584556921,
+          0.0001323963838811289,
+          -0.003188001584556921
+        ],
+        [
+          0.003188001584556921,
+          0.00028384034780535547,
+          0.003188001584556921
+        ]
+      ],
+      "dimensions_mm": [
+        6.376003169113842,
+        6.376003169113842,
+        0.15144396392422654
+      ],
+      "explode_m": [
+        0,
+        0.0016,
+        0
+      ],
+      "tessellation_tolerance_mm": 4e-05,
+      "volume_mm3": 0.0012736194306425398,
+      "cad_valid": true
+    },
+    {
+      "id": "tent-lower",
+      "name": "Lower suspension membrane",
+      "parent": "support",
+      "material": "Formvar polymer",
+      "color": "#d7dbe2",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "membrane_thickness"
+      ],
+      "source_id": "prl-2024",
+      "note": "45 nm normal thickness is published; smooth drape, contact and 100 nm clearance are inferred.",
+      "bounds_m": [
+        [
+          -0.003188001584556921,
+          -0.00028384034780535547,
+          -0.003188001584556921
+        ],
+        [
+          0.003188001584556921,
+          -0.0001323963838811289,
+          0.003188001584556921
+        ]
+      ],
+      "dimensions_mm": [
+        6.376003169113842,
+        6.376003169113842,
+        0.15144396392422654
+      ],
+      "explode_m": [
+        0,
+        -0.0016,
+        0
+      ],
+      "tessellation_tolerance_mm": 4e-05,
+      "volume_mm3": 0.0012736194306425398,
+      "cad_valid": true
+    },
+    {
+      "id": "fill-tip",
+      "name": "2 \u00b5m fill-tube tip",
+      "parent": "fill",
+      "material": "Glass",
+      "color": "#f3bd81",
+      "evidence": "mixed",
+      "parameter_keys": [
+        "fill_tube_outer_radius",
+        "fill_tube_inner_radius",
+        "fill_tube_tip_length"
+      ],
+      "source_id": "prl-2024",
+      "note": "Published tip diameter; assumed bore. The reference tip length is from 2018 development hardware.",
+      "bounds_m": [
+        [
+          0.0010400000000000001,
+          -1e-06,
+          -1e-06
+        ],
+        [
+          0.0021360000000000003,
+          1e-06,
+          1e-06
+        ]
+      ],
+      "dimensions_mm": [
+        1.096,
+        0.002,
+        0.002
+      ],
+      "explode_m": [
+        0,
+        0,
+        0.0003
+      ],
+      "tessellation_tolerance_mm": 1e-05,
+      "volume_mm3": 2.5823891612508048e-06,
+      "cad_valid": true
+    },
+    {
+      "id": "fill-stem",
+      "name": "Tapered fill line",
+      "parent": "fill",
+      "material": "Glass",
+      "color": "#a7c9d5",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "fill-tube-2018",
+      "note": "Illustrative taper and routing informed by the 2018 photograph; shown as a solid envelope, bore omitted.",
+      "bounds_m": [
+        [
+          0.0021360000000000003,
+          -2.0000000000000005e-05,
+          -2.0000000000000005e-05
+        ],
+        [
+          0.0035,
+          2.0000000000000005e-05,
+          2.0000000000000005e-05
+        ]
+      ],
+      "dimensions_mm": [
+        1.3639999999999999,
+        0.04000000000000001,
+        0.04000000000000001
+      ],
+      "explode_m": [
+        0,
+        0,
+        0.0003
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.0006013469105893378,
+      "cad_valid": true
+    },
+    {
+      "id": "fill-joint",
+      "name": "Fill-tube attachment",
+      "parent": "fill",
+      "material": "Attachment adhesive",
+      "color": "#e8d59e",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "fill-tube-2018",
+      "note": "Smooth meniscus-shaped attachment with a through-bore; profile inferred from 2018 micrographs, not measured N221204 adhesive.",
+      "bounds_m": [
+        [
+          0.0011359845814977972,
+          -5.918665328788142e-06,
+          -5.918665328787833e-06
+        ],
+        [
+          0.0011408887604807802,
+          5.9186653287878645e-06,
+          5.918665328787833e-06
+        ]
+      ],
+      "dimensions_mm": [
+        0.004904178982983121,
+        0.011837330657575666,
+        0.011837330657576008
+      ],
+      "explode_m": [
+        0,
+        0,
+        0.0003
+      ],
+      "tessellation_tolerance_mm": 0.0002,
+      "volume_mm3": 3.2064228047872455e-07,
+      "cad_valid": true
+    },
+    {
+      "id": "cooling-upper",
+      "name": "Upper cooling ring",
+      "parent": "hardware",
+      "material": "Thermal control hardware",
+      "color": "#ba8255",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Envelope inferred from intact assembly imagery; dimensions are not shot-specific.",
+      "bounds_m": [
+        [
+          -0.0036200000000000004,
+          0.003625,
+          -0.0036200000000000004
+        ],
+        [
+          0.0036200000000000004,
+          0.003975,
+          0.0036200000000000004
+        ]
+      ],
+      "dimensions_mm": [
+        7.24,
+        7.24,
+        0.3500000000000001
+      ],
+      "explode_m": [
+        0,
+        0.005,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 2.8520716427758517,
+      "cad_valid": true
+    },
+    {
+      "id": "heater-upper",
+      "name": "Upper heater band",
+      "parent": "hardware",
+      "material": "Heater envelope",
+      "color": "#c76556",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Illustrative heater band. Wiring and deposited pattern are not reconstructed.",
+      "bounds_m": [
+        [
+          -0.00346,
+          0.0027300000000000002,
+          -0.00346
+        ],
+        [
+          0.00346,
+          0.00287,
+          0.00346
+        ]
+      ],
+      "dimensions_mm": [
+        6.92,
+        6.92,
+        0.14000000000000012
+      ],
+      "explode_m": [
+        0,
+        0.003,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.6425971949922293,
+      "cad_valid": true
+    },
+    {
+      "id": "cooling-lower",
+      "name": "Lower cooling ring",
+      "parent": "hardware",
+      "material": "Thermal control hardware",
+      "color": "#ba8255",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Envelope inferred from intact assembly imagery; dimensions are not shot-specific.",
+      "bounds_m": [
+        [
+          -0.0036200000000000004,
+          -0.003974999999999999,
+          -0.0036200000000000004
+        ],
+        [
+          0.0036200000000000004,
+          -0.0036249999999999998,
+          0.0036200000000000004
+        ]
+      ],
+      "dimensions_mm": [
+        7.24,
+        7.24,
+        0.3500000000000001
+      ],
+      "explode_m": [
+        0,
+        -0.005,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 2.8520716427758517,
+      "cad_valid": true
+    },
+    {
+      "id": "heater-lower",
+      "name": "Lower heater band",
+      "parent": "hardware",
+      "material": "Heater envelope",
+      "color": "#c76556",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Illustrative heater band. Wiring and deposited pattern are not reconstructed.",
+      "bounds_m": [
+        [
+          -0.00346,
+          -0.0028699999999999997,
+          -0.00346
+        ],
+        [
+          0.00346,
+          -0.00273,
+          0.00346
+        ]
+      ],
+      "dimensions_mm": [
+        6.92,
+        6.92,
+        0.14000000000000012
+      ],
+      "explode_m": [
+        0,
+        -0.003,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.6425971949922298,
+      "cad_valid": true
+    },
+    {
+      "id": "arm-right",
+      "name": "Right silicon cooling fork",
+      "parent": "hardware",
+      "material": "Silicon",
+      "color": "#75808c",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Rounded fork and contact pads reconstructed from assembly imagery; all exterior dimensions are estimated.",
+      "bounds_m": [
+        [
+          0.00309,
+          -0.007449999999999999,
+          -0.00027500010000008115
+        ],
+        [
+          0.00418,
+          0.00425,
+          0.00027500010000008115
+        ]
+      ],
+      "dimensions_mm": [
+        1.0899999999999999,
+        0.5500002000001623,
+        11.7
+      ],
+      "explode_m": [
+        0.003,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 3.0000266484217484,
+      "cad_valid": true
+    },
+    {
+      "id": "shield-right",
+      "name": "Right formed light shield",
+      "parent": "hardware",
+      "material": "Aluminium light shield",
+      "color": "#bec6cf",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Separate folded light-shield envelope; folds and thickness are inferred from intact assembly photographs.",
+      "bounds_m": [
+        [
+          0.0038999999000000002,
+          -0.0067000001,
+          -0.00042000010000000005
+        ],
+        [
+          0.004370000000000001,
+          0.0040000001000000006,
+          0.0004200001
+        ]
+      ],
+      "dimensions_mm": [
+        0.47000010000000003,
+        0.8400002,
+        10.7000002
+      ],
+      "explode_m": [
+        0.004,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 1.2379322590989503,
+      "cad_valid": true
+    },
+    {
+      "id": "heater-lead-right",
+      "name": "Right heater lead",
+      "parent": "hardware",
+      "material": "Insulated conductor",
+      "color": "#81675a",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Routed lead envelope from assembly appearance; conductor dimensions and routing are illustrative.",
+      "bounds_m": [
+        [
+          0.0034271901154796585,
+          -0.007700000000000001,
+          -0.000275
+        ],
+        [
+          0.0037550000000000005,
+          0.002812186528536127,
+          -0.000205
+        ]
+      ],
+      "dimensions_mm": [
+        0.3278098845203421,
+        0.07000000000000003,
+        10.512186528536128
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.04057828527612763,
+      "cad_valid": true
+    },
+    {
+      "id": "contact-right-lower",
+      "name": "Right lower cooling contact",
+      "parent": "hardware",
+      "material": "Thermal contact",
+      "color": "#b88852",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Estimated contact pad; visible silhouette only, not a manufacturing interface.",
+      "bounds_m": [
+        [
+          0.003255,
+          -0.00404,
+          -0.0003400000000000001
+        ],
+        [
+          0.003705,
+          -0.00356,
+          0.0003400000000000001
+        ]
+      ],
+      "dimensions_mm": [
+        0.4500000000000002,
+        0.6800000000000002,
+        0.4800000000000004
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.13872065865561203,
+      "cad_valid": true
+    },
+    {
+      "id": "contact-right-upper",
+      "name": "Right upper cooling contact",
+      "parent": "hardware",
+      "material": "Thermal contact",
+      "color": "#b88852",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Estimated contact pad; visible silhouette only, not a manufacturing interface.",
+      "bounds_m": [
+        [
+          0.003255,
+          0.00356,
+          -0.0003400000000000001
+        ],
+        [
+          0.003705,
+          0.00404,
+          0.0003400000000000001
+        ]
+      ],
+      "dimensions_mm": [
+        0.4500000000000002,
+        0.6800000000000002,
+        0.4800000000000004
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.138720658655612,
+      "cad_valid": true
+    },
+    {
+      "id": "arm-left",
+      "name": "Left silicon cooling fork",
+      "parent": "hardware",
+      "material": "Silicon",
+      "color": "#75808c",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Rounded fork and contact pads reconstructed from assembly imagery; all exterior dimensions are estimated.",
+      "bounds_m": [
+        [
+          -0.00418,
+          -0.007449999999999999,
+          -0.00027500010000008115
+        ],
+        [
+          -0.00309,
+          0.00425,
+          0.00027500010000008115
+        ]
+      ],
+      "dimensions_mm": [
+        1.0899999999999999,
+        0.5500002000001623,
+        11.7
+      ],
+      "explode_m": [
+        -0.003,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 3.0000266484217484,
+      "cad_valid": true
+    },
+    {
+      "id": "shield-left",
+      "name": "Left formed light shield",
+      "parent": "hardware",
+      "material": "Aluminium light shield",
+      "color": "#bec6cf",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Separate folded light-shield envelope; folds and thickness are inferred from intact assembly photographs.",
+      "bounds_m": [
+        [
+          -0.004370000000000001,
+          -0.0067000001,
+          -0.00042000010000000005
+        ],
+        [
+          -0.0038999999000000002,
+          0.0040000001000000006,
+          0.0004200001
+        ]
+      ],
+      "dimensions_mm": [
+        0.47000010000000003,
+        0.8400002,
+        10.7000002
+      ],
+      "explode_m": [
+        -0.004,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 1.2379322590989212,
+      "cad_valid": true
+    },
+    {
+      "id": "heater-lead-left",
+      "name": "Left heater lead",
+      "parent": "hardware",
+      "material": "Insulated conductor",
+      "color": "#81675a",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Routed lead envelope from assembly appearance; conductor dimensions and routing are illustrative.",
+      "bounds_m": [
+        [
+          -0.0037550000000000005,
+          -0.007700000000000001,
+          -0.000275
+        ],
+        [
+          -0.0034271901154796585,
+          0.002812186528536127,
+          -0.000205
+        ]
+      ],
+      "dimensions_mm": [
+        0.3278098845203421,
+        0.07000000000000003,
+        10.512186528536128
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.040578285195805155,
+      "cad_valid": true
+    },
+    {
+      "id": "contact-left-lower",
+      "name": "Left lower cooling contact",
+      "parent": "hardware",
+      "material": "Thermal contact",
+      "color": "#b88852",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Estimated contact pad; visible silhouette only, not a manufacturing interface.",
+      "bounds_m": [
+        [
+          -0.003705,
+          -0.00404,
+          -0.0003400000000000001
+        ],
+        [
+          -0.003255,
+          -0.00356,
+          0.0003400000000000001
+        ]
+      ],
+      "dimensions_mm": [
+        0.4500000000000002,
+        0.6800000000000002,
+        0.4800000000000004
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.13872065865561198,
+      "cad_valid": true
+    },
+    {
+      "id": "contact-left-upper",
+      "name": "Left upper cooling contact",
+      "parent": "hardware",
+      "material": "Thermal contact",
+      "color": "#b88852",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Estimated contact pad; visible silhouette only, not a manufacturing interface.",
+      "bounds_m": [
+        [
+          -0.003705,
+          0.00356,
+          -0.0003400000000000001
+        ],
+        [
+          -0.003255,
+          0.00404,
+          0.0003400000000000001
+        ]
+      ],
+      "dimensions_mm": [
+        0.4500000000000002,
+        0.6800000000000002,
+        0.4800000000000004
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.138720658655612,
+      "cad_valid": true
+    },
+    {
+      "id": "mount",
+      "name": "Target support collar and crossbar",
+      "parent": "hardware",
+      "material": "Support hardware",
+      "color": "#8394a1",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Rounded crossbar and cylindrical mounting collar inferred from assembly context.",
+      "bounds_m": [
+        [
+          -0.0044,
+          -0.01325,
+          -0.0009000001
+        ],
+        [
+          0.0044,
+          -0.007700000000000001,
+          0.0009000001
+        ]
+      ],
+      "dimensions_mm": [
+        8.8,
+        1.8000002,
+        5.549999999999999
+      ],
+      "explode_m": [
+        0,
+        -0.006,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 15.841420741378903,
+      "cad_valid": true
+    },
+    {
+      "id": "fill-feed",
+      "name": "Routed external fill capillary",
+      "parent": "fill",
+      "material": "Glass capillary",
+      "color": "#dce4e9",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Hollow routed capillary envelope; route and bore are estimated, not an N221204 plumbing specification.",
+      "bounds_m": [
+        [
+          0.0034790361029734267,
+          -0.0078000001,
+          -4e-05
+        ],
+        [
+          0.00484,
+          3.406633266818176e-05,
+          4e-05
+        ]
+      ],
+      "dimensions_mm": [
+        1.3609638970265734,
+        0.08,
+        7.834066432668182
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0002,
+      "volume_mm3": 0.026090787231783968,
+      "cad_valid": true
+    },
+    {
+      "id": "window-rim-60",
+      "name": "Observation window surround 60\u00b0",
+      "parent": "hardware",
+      "material": "Metal window surround",
+      "color": "#ba975d",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Recessed window surround inferred from intact photographs; location and dimensions estimated.",
+      "bounds_m": [
+        [
+          0.001304391108675447,
+          -0.00035,
+          -0.0030198934514318806
+        ],
+        [
+          0.0019456088913245538,
+          0.00035,
+          -0.0026092716731669703
+        ]
+      ],
+      "dimensions_mm": [
+        0.6412177826491068,
+        0.4106217782649102,
+        0.7
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.009698096521631682,
+      "cad_valid": true
+    },
+    {
+      "id": "window-60",
+      "name": "Observation window 60\u00b0",
+      "parent": "hardware",
+      "material": "Window envelope",
+      "color": "#749ab1",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Illustrative equatorial window. These positions, diameter and thickness are not a N221204 diagnostic-port specification.",
+      "bounds_m": [
+        [
+          0.0013775128869403578,
+          -0.00028000000000000003,
+          -0.0029476543590691504
+        ],
+        [
+          0.0018634871130596433,
+          0.00028000000000000003,
+          -0.0026659223082615814
+        ]
+      ],
+      "dimensions_mm": [
+        0.48597422611928565,
+        0.28173205080756913,
+        0.56
+      ],
+      "explode_m": [
+        0,
+        0,
+        -0.004
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.0004926017280828743,
+      "cad_valid": true
+    },
+    {
+      "id": "window-rim-180",
+      "name": "Observation window surround 180\u00b0",
+      "parent": "hardware",
+      "material": "Metal window surround",
+      "color": "#ba975d",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Recessed window surround inferred from intact photographs; location and dimensions estimated.",
+      "bounds_m": [
+        [
+          -0.0032849999999999997,
+          -0.00035,
+          -0.0003500000000000004
+        ],
+        [
+          -0.003215,
+          0.00035,
+          0.0003499999999999996
+        ]
+      ],
+      "dimensions_mm": [
+        0.06999999999999984,
+        0.7,
+        0.7
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.009698096521631682,
+      "cad_valid": true
+    },
+    {
+      "id": "window-180",
+      "name": "Observation window 180\u00b0",
+      "parent": "hardware",
+      "material": "Window envelope",
+      "color": "#749ab1",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Illustrative equatorial window. These positions, diameter and thickness are not a N221204 diagnostic-port specification.",
+      "bounds_m": [
+        [
+          -0.003242,
+          -0.00028000000000000003,
+          -0.0002800000000000004
+        ],
+        [
+          -0.0032400000000000003,
+          0.00028000000000000003,
+          0.00027999999999999965
+        ]
+      ],
+      "dimensions_mm": [
+        0.0019999999999997797,
+        0.56,
+        0.56
+      ],
+      "explode_m": [
+        0,
+        0,
+        -0.004
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.0004926017280828606,
+      "cad_valid": true
+    },
+    {
+      "id": "window-rim-300",
+      "name": "Observation window surround 300\u00b0",
+      "parent": "hardware",
+      "material": "Metal window surround",
+      "color": "#ba975d",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Recessed window surround inferred from intact photographs; location and dimensions estimated.",
+      "bounds_m": [
+        [
+          0.001304391108675447,
+          -0.00035,
+          0.0026092716731669703
+        ],
+        [
+          0.0019456088913245538,
+          0.00035,
+          0.0030198934514318806
+        ]
+      ],
+      "dimensions_mm": [
+        0.6412177826491068,
+        0.4106217782649102,
+        0.7
+      ],
+      "explode_m": [
+        0,
+        0,
+        0
+      ],
+      "tessellation_tolerance_mm": 0.0005,
+      "volume_mm3": 0.009698096521631686,
+      "cad_valid": true
+    },
+    {
+      "id": "window-300",
+      "name": "Observation window 300\u00b0",
+      "parent": "hardware",
+      "material": "Window envelope",
+      "color": "#749ab1",
+      "evidence": "estimated",
+      "parameter_keys": [],
+      "source_id": "assembly-2025",
+      "note": "Illustrative equatorial window. These positions, diameter and thickness are not a N221204 diagnostic-port specification.",
+      "bounds_m": [
+        [
+          0.0013775128869403578,
+          -0.00028000000000000003,
+          0.0026659223082615814
+        ],
+        [
+          0.0018634871130596433,
+          0.00028000000000000003,
+          0.0029476543590691504
+        ]
+      ],
+      "dimensions_mm": [
+        0.48597422611928565,
+        0.28173205080756913,
+        0.56
+      ],
+      "explode_m": [
+        0,
+        0,
+        -0.004
+      ],
+      "tessellation_tolerance_mm": 0.0001,
+      "volume_mm3": 0.0004926017280828751,
+      "cad_valid": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "prl-2024",
+      "title": "Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment",
+      "url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.132.065102",
+      "kind": "paper",
+      "date": "2024-02-05",
+      "credit": "H. Abu-Shawareb et al., The Indirect Drive ICF Collaboration",
+      "caption": "Target N221204; December 5, 2022. Fig. 1 is a schematic, not a photograph.",
+      "rights": "CC BY 4.0; cite authors, title, journal and DOI",
+      "use": "Geometry baseline; source linked"
+    },
+    {
+      "id": "ga-capsule",
+      "title": "The December 2022 ignition capsule",
+      "url": "https://www.ga.com/images/data-sheets/NIF_datasheet_082923.pdf#page=1",
+      "kind": "photograph in PDF",
+      "date": "2023-08",
+      "credit": "General Atomics; retain image credits on original",
+      "caption": "Publisher identifies the pictured capsule as used in the December 2022 ignition experiment. Capture date unspecified.",
+      "rights": "Separate image reuse permission not established",
+      "use": "Source link only"
+    },
+    {
+      "id": "assembly-2025",
+      "title": "Intact cryogenic ignition assembly",
+      "url": "https://lasers.llnl.gov/sites/lasers/files/2025-03/03_Present-Understanding-of-Ignition-And-Gain-Using-Indirect-Drive-Inertial-Confinement-Fusion-Target-Designs-On%20The-US-National-Ignition-Facility-Omar-Hurricane.pdf#page=5",
+      "kind": "annotated photograph in PDF",
+      "date": "2025-02-11",
+      "credit": "Omar A. Hurricane / LLNL; slide cites T. Braun et al. (2022)",
+      "caption": "Slide 5: cooling arms, light shields, heaters, observation windows and fill line. Photograph date and shot identity unspecified.",
+      "rights": "LLNL original works: CC BY-NC-SA 4.0; third-party figures may differ",
+      "use": "Source link only; exterior reference, not shot-specific geometry"
+    },
+    {
+      "id": "hohlraum-photo",
+      "title": "NIF hohlraum \u00b7 official photograph",
+      "url": "https://lasers.llnl.gov/multimedia/photo-gallery?page=3",
+      "image_url": "https://lasers.llnl.gov/sites/lasers/files/2023-06/nif-1002-05557.jpg",
+      "kind": "photograph",
+      "date": null,
+      "credit": "Lawrence Livermore National Laboratory",
+      "caption": "NIF hohlraum. Capture date and target generation unspecified; the adjacent gallery artwork is an illustration.",
+      "rights": "LLNL original works: CC BY-NC-SA 4.0",
+      "use": "Source link only"
+    },
+    {
+      "id": "fill-tube-2018",
+      "title": "Two-micron fill-tube micrographs",
+      "url": "https://lasers.llnl.gov/news/two-micron-fill-tubes-fill-two-needs",
+      "kind": "micrograph",
+      "date": "2018-12-05",
+      "credit": "General Atomics",
+      "caption": "A 2-micrometre fill tube inserted into a capsule; a second image shows the tapered tube. 2018 development hardware, not the 2022 shot.",
+      "rights": "Third-party General Atomics imagery; reuse permission not established",
+      "use": "Source link only"
+    },
+    {
+      "id": "chamber",
+      "title": "NIF target chamber",
+      "url": "https://lasers.llnl.gov/about/how-nif-works/target-chamber",
+      "kind": "facility description",
+      "date": null,
+      "credit": "LLNL / National Ignition Facility",
+      "caption": "10 m nominal chamber, 10 cm aluminium wall; positioners locate the target at chamber centre.",
+      "rights": "LLNL original works: CC BY-NC-SA 4.0",
+      "use": "Factual dimensions for simplified context"
+    }
+  ],
+  "conflicts": [
+    "GA's 2 mm capsule and 85 micrometre wall are rounded outreach values. The experiment paper specifies a 1.05 mm inner radius and 8 + 15 + 63 micrometre sublayers, giving a nominal 2.272 mm outer diameter and 86 micrometre wall.",
+    "LLNL's general targets page describes a 9 \u00d7 5 mm hohlraum. This is not the 11.24 \u00d7 6.4 mm N221204 baseline.",
+    "The complete pre-shot exterior of the specific December 2022 assembly has not been verified photographically. Generic intact hardware supplies visual context only."
+  ],
+  "limitations": [
+    "Original educational reconstruction from published geometry; not LLNL or General Atomics production CAD.",
+    "Outer hohlraum wall, lining thickness, tube bore, glue, support contours, cooling rings, arms, shields, heaters and windows include explicitly estimated dimensions.",
+    "Suspension thickness is published; the conical support contours and contact positions are illustrative.",
+    "Smooth nominal surfaces contain no measured defects, crystal grains or invented nanoscale roughness.",
+    "Static pre-shot geometry only. No implosion, laser-drive calculation, manufacturing validation or power-plant performance prediction.",
+    "Chamber ports, target-bay machinery and actual positioner mechanisms are omitted; chamber dimensions provide scale context."
+  ],
+  "capsule_outer_radius_m": 0.0011359999999999999,
+  "chamber_radius_m": 5.0,
+  "assets": [
+    {
+      "id": "assembly-intact",
+      "url": "fusion/nif-target/assembly-intact.glb",
+      "sha256": "3ccf48a8523891b3d5fc8e41b1cff69f4634a4cad9e55d13ccb20e7eda8a2cc1",
+      "bytes": 716100,
+      "component_ids": [
+        "hohlraum-wall",
+        "gold-lining",
+        "entrance-upper",
+        "entrance-lower",
+        "cooling-upper",
+        "heater-upper",
+        "cooling-lower",
+        "heater-lower",
+        "arm-right",
+        "shield-right",
+        "heater-lead-right",
+        "contact-right-lower",
+        "contact-right-upper",
+        "arm-left",
+        "shield-left",
+        "heater-lead-left",
+        "contact-left-lower",
+        "contact-left-upper",
+        "mount",
+        "window-rim-60",
+        "window-60",
+        "window-rim-180",
+        "window-180",
+        "window-rim-300",
+        "window-300"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0044,
+          -0.01325,
+          -0.0036200000000000004
+        ],
+        [
+          0.0044,
+          0.00562,
+          0.0036200000000000004
+        ]
+      ],
+      "deflection_m": 5e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "assembly-cutaway",
+      "url": "fusion/nif-target/assembly-cutaway.glb",
+      "sha256": "a6b5485452b014303c621942e1a18cb474bcd5c5565a2e686fb0c43bf79d5ba2",
+      "bytes": 417108,
+      "component_ids": [
+        "hohlraum-wall",
+        "gold-lining",
+        "entrance-upper",
+        "entrance-lower",
+        "cooling-upper",
+        "heater-upper",
+        "cooling-lower",
+        "heater-lower",
+        "arm-right",
+        "shield-right",
+        "heater-lead-right",
+        "contact-right-lower",
+        "contact-right-upper",
+        "arm-left",
+        "shield-left",
+        "heater-lead-left",
+        "contact-left-lower",
+        "contact-left-upper",
+        "mount",
+        "window-rim-60",
+        "window-60",
+        "window-rim-180",
+        "window-180"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0044,
+          -0.01325,
+          -0.0036200000000000004
+        ],
+        [
+          0.0044,
+          0.00562,
+          8.866442825826838e-19
+        ]
+      ],
+      "deflection_m": 5e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "capsule-intact",
+      "url": "fusion/nif-target/capsule-intact.glb",
+      "sha256": "c4d1574ab898e495d9d79c325871df216e8691bd0b827954c320fa464d8ed690",
+      "bytes": 2321664,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-stem",
+        "fill-joint",
+        "fill-feed"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0031877014919937563,
+          -0.0078,
+          -0.0031879264855339397
+        ],
+        [
+          0.004839982433460351,
+          0.0011359999999999999,
+          0.0031879264855339397
+        ]
+      ],
+      "deflection_m": 6e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "capsule-cutaway",
+      "url": "fusion/nif-target/capsule-cutaway.glb",
+      "sha256": "25d15e93963b413b3f0a101c1d322deb08ed1e54372b09ac964a77494fe77e3f",
+      "bytes": 1189864,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-stem",
+        "fill-joint",
+        "fill-feed"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0031880014845569226,
+          -0.0078,
+          -0.0031877040949133332
+        ],
+        [
+          0.00484,
+          0.0011359999999999999,
+          2.7823962232411534e-19
+        ]
+      ],
+      "deflection_m": 6e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "capsule-fine-intact",
+      "url": "fusion/nif-target/capsule-fine-intact.glb",
+      "sha256": "38b3af80e78bbfff136a5dc0f435e575bef0bf6197d31d942bb24ec285fd4776",
+      "bytes": 19552564,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-stem",
+        "fill-joint",
+        "fill-feed"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0031879814886746558,
+          -0.0078,
+          -0.0031879964855824365
+        ],
+        [
+          0.004839982433460351,
+          0.0011359999999999999,
+          0.0031879964855824365
+        ]
+      ],
+      "deflection_m": 2.0000000000000002e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "capsule-fine-cutaway",
+      "url": "fusion/nif-target/capsule-fine-cutaway.glb",
+      "sha256": "a23690f92beac9a5e6f887794d8d3122775e3032a215373e3723e88ddf01a78a",
+      "bytes": 9640564,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-stem",
+        "fill-joint",
+        "fill-feed"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "Full components",
+      "feature": null,
+      "local_origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          -0.0031880014845569226,
+          -0.0078,
+          -0.0031880014845569226
+        ],
+        [
+          0.00484,
+          0.0011359999999999999,
+          2.7823962232411534e-19
+        ]
+      ],
+      "deflection_m": 2.0000000000000002e-07,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "micro-intact",
+      "url": "fusion/nif-target/micro-intact.glb",
+      "sha256": "d05ea20fba4a06538022efdd09a42632035c842ceaf21b41721d63b6dd8fcb7a",
+      "bytes": 3817084,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.8 mm local region; 10 nm absolute deflection",
+      "feature": "junction",
+      "local_origin_m": [
+        0.0011359999999999999,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.0007359999999999999,
+          -0.00040000000000000056,
+          -0.0004
+        ],
+        [
+          0.001536,
+          0.0004000000000000001,
+          0.00040000000000000045
+        ]
+      ],
+      "deflection_m": 1e-08,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "micro-cutaway",
+      "url": "fusion/nif-target/micro-cutaway.glb",
+      "sha256": "7c7723b49d7fd45043edd8f6d4312cf269ed28426ab9a0e1a7bcad2c53b64780",
+      "bytes": 1940340,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "tent-lower",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.8 mm local region; 10 nm absolute deflection",
+      "feature": "junction",
+      "local_origin_m": [
+        0.0011359999999999999,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.0007359999999999999,
+          -0.00040000000000000056,
+          -0.0004
+        ],
+        [
+          0.001536,
+          0.0004000000000000001,
+          2.7823962232411534e-19
+        ]
+      ],
+      "deflection_m": 1e-08,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "junction-fine-intact",
+      "url": "fusion/nif-target/junction-fine-intact.glb",
+      "sha256": "e6e9b264da1a34fa4f3d132f9261da0f4291be92c06372520ff59d2bc9e2f99b",
+      "bytes": 479116,
+      "component_ids": [
+        "hdc-outer",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.06 mm local region; 0.5 nm absolute deflection",
+      "feature": "junction",
+      "local_origin_m": [
+        0.0011359999999999999,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.001106,
+          -3.0000000000000716e-05,
+          -3e-05
+        ],
+        [
+          0.001166,
+          3.000000000000016e-05,
+          3e-05
+        ]
+      ],
+      "deflection_m": 5e-10,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "junction-fine-cutaway",
+      "url": "fusion/nif-target/junction-fine-cutaway.glb",
+      "sha256": "b8da258320b9f3caad0d99c3f201f870142cbfcccc4031a484055be3a7b7c3d2",
+      "bytes": 247700,
+      "component_ids": [
+        "hdc-outer",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.06 mm local region; 0.5 nm absolute deflection",
+      "feature": "junction",
+      "local_origin_m": [
+        0.0011359999999999999,
+        0.0,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.001106,
+          -3.0000000000000716e-05,
+          -3e-05
+        ],
+        [
+          0.001166,
+          3.000000000000016e-05,
+          2.7823962232411534e-19
+        ]
+      ],
+      "deflection_m": 5e-10,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "membrane-intact",
+      "url": "fusion/nif-target/membrane-intact.glb",
+      "sha256": "b0614fb9ea4f7ca590b35ab093f3bc943a3fb707dd8a6590a8f7a7640751bcfd",
+      "bytes": 3743024,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.8 mm local region; 10 nm absolute deflection",
+      "feature": "membrane",
+      "local_origin_m": [
+        0.0011,
+        0.00028381817002088477,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.0007000000000000001,
+          -0.00011618182997911574,
+          -0.0004
+        ],
+        [
+          0.0015,
+          0.0006838181700208848,
+          0.00040000000000000045
+        ]
+      ],
+      "deflection_m": 1e-08,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "membrane-cutaway",
+      "url": "fusion/nif-target/membrane-cutaway.glb",
+      "sha256": "877e2898e16cc71b17ad105ada9d6c15260725e73c940fd08b9f50fafd8c674c",
+      "bytes": 1890852,
+      "component_ids": [
+        "hdc-outer",
+        "hdc-middle",
+        "hdc-inner",
+        "dt-ice",
+        "dt-gas",
+        "tent-upper",
+        "fill-tip",
+        "fill-joint"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.8 mm local region; 10 nm absolute deflection",
+      "feature": "membrane",
+      "local_origin_m": [
+        0.0011,
+        0.00028381817002088477,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.0007000000000000001,
+          -0.00011618182997911574,
+          -0.0004
+        ],
+        [
+          0.0015,
+          0.0006838181700208848,
+          2.7823962232411534e-19
+        ]
+      ],
+      "deflection_m": 1e-08,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "membrane-fine-intact",
+      "url": "fusion/nif-target/membrane-fine-intact.glb",
+      "sha256": "955b81bc5366a34a469cf7c3468524719c6f05c9d0018bb772600c7788cf6506",
+      "bytes": 57716,
+      "component_ids": [
+        "hdc-outer",
+        "tent-upper"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.06 mm local region; 0.5 nm absolute deflection",
+      "feature": "membrane",
+      "local_origin_m": [
+        0.0011,
+        0.00028381817002088477,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.00107,
+          0.0002538181700208841,
+          -3e-05
+        ],
+        [
+          0.0011300000000000004,
+          0.00031381817002088474,
+          3.000000000000037e-05
+        ]
+      ],
+      "deflection_m": 5e-10,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    },
+    {
+      "id": "membrane-fine-cutaway",
+      "url": "fusion/nif-target/membrane-fine-cutaway.glb",
+      "sha256": "51e645317de13167fac09d2a985d7bd11c1c4b2dec804efecefd230e537da829",
+      "bytes": 33704,
+      "component_ids": [
+        "hdc-outer",
+        "tent-upper"
+      ],
+      "unit": "m",
+      "up_axis": "Y",
+      "scope": "0.06 mm local region; 0.5 nm absolute deflection",
+      "feature": "membrane",
+      "local_origin_m": [
+        0.0011,
+        0.00028381817002088477,
+        0.0
+      ],
+      "bounds_m": [
+        [
+          0.00107,
+          0.0002538181700208841,
+          -3e-05
+        ],
+        [
+          0.0011300000000000004,
+          0.00031381817002088474,
+          2.7120575075155125e-19
+        ]
+      ],
+      "deflection_m": 5e-10,
+      "compression": "EXT_meshopt_compression; byte-exact; no quantization"
+    }
+  ],
+  "cut_plane": {
+    "normal": [
+      0,
+      0,
+      1
+    ],
+    "constant_m": 0,
+    "retained_halfspace": "z <= 0"
+  },
+  "features": {
+    "junction": {
+      "label": "Fill-tube junction",
+      "anchor_m": [
+        0.0011359999999999999,
+        0,
+        0
+      ],
+      "minimum_distance_m": 4e-06,
+      "component_id": "fill-tip"
+    },
+    "membrane": {
+      "label": "Suspension film",
+      "anchor_m": [
+        0.0011,
+        0.00028381817002088477,
+        0.0
+      ],
+      "minimum_distance_m": 2e-06,
+      "component_id": "tent-upper",
+      "thickness_m": 4.5000000000000006e-08
+    }
+  },
+  "materials": {
+    "gold": {
+      "color": "#c99b43",
+      "metalness": 0.92,
+      "roughness": 0.24
+    },
+    "metal": {
+      "color": "#a9b1bd",
+      "metalness": 0.82,
+      "roughness": 0.3
+    },
+    "silicon": {
+      "color": "#666e7d",
+      "metalness": 0.35,
+      "roughness": 0.22
+    },
+    "glass": {
+      "color": "#e2edf0",
+      "metalness": 0,
+      "roughness": 0.1,
+      "transmission": 0.3,
+      "ior": 1.46
+    },
+    "diamond": {
+      "color": "#d3e4e8",
+      "metalness": 0,
+      "roughness": 0.16,
+      "transmission": 0.12,
+      "ior": 2.42
+    },
+    "film": {
+      "color": "#d6d9e3",
+      "metalness": 0,
+      "roughness": 0.22,
+      "opacity": 0.32
+    },
+    "adhesive": {
+      "color": "#d5b982",
+      "metalness": 0,
+      "roughness": 0.28
+    },
+    "fuel": {
+      "color": "#c0d8d2",
+      "metalness": 0,
+      "roughness": 0.28
+    }
+  },
+  "downloads": [
+    {
+      "label": "STEP assembly \u00b7 millimetres",
+      "url": "fusion/nif-target/nif-target.step",
+      "sha256": "efad9fbec4023934ba9bf820196beeefbe633fc72a68384111366320fd97f439"
+    },
+    {
+      "label": "Parametric CAD generator",
+      "url": "fusion/nif-target/build_nif_target.py",
+      "sha256": "fd6447326853ea65e6a0c1eb7a71a60dde2eef197ab1287d15f4be5b4a2b6fd0"
+    },
+    {
+      "label": "Parameters & source evidence",
+      "url": "fusion/nif-target/parameters.json",
+      "sha256": "0f47b9a0acc0f4fa6056a345b59f04255947fffdee033a350d8184194b1eb8fe"
+    },
+    {
+      "label": "Geometry checks",
+      "url": "fusion/nif-target/checks.json",
+      "sha256": "67a7a60b4589e7c6344b4cc11ea4d1e4b6074090014a3be2e7f5f511480ce195"
+    }
+  ]
+}

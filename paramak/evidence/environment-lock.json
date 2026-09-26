@@ -1,0 +1,436 @@
+{
+  "schema_version": "fusion-r6a-runtime-lock/1",
+  "environment_sha256": "36885ee5721e2c86d479f361b407aaf595959f590576e1c1cbd0e0acae61909b",
+  "freeze_sha256": "89d684d22f570d2e68613e8b9bbc172700d1b3e8370163a51b9088789faec3a9",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "python_executable_sha256": "ac60cfe0268614638d0ffa35f3b0284fc7b3a11482723793455e17eeb278509e",
+  "platform": "macOS-26.6.1-arm64-arm-64bit",
+  "runtime_packages": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "cadquery",
+      "version": "2.6.0"
+    },
+    {
+      "name": "cadquery-ocp",
+      "version": "7.8.1.1.post1"
+    },
+    {
+      "name": "casadi",
+      "version": "3.8.0"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "ezdxf",
+      "version": "1.4.4"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.64.0"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.19"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.25.1"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.6"
+    },
+    {
+      "name": "more-itertools",
+      "version": "11.1.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.2"
+    },
+    {
+      "name": "multidict",
+      "version": "6.7.1"
+    },
+    {
+      "name": "multimethod",
+      "version": "1.12"
+    },
+    {
+      "name": "nlopt",
+      "version": "2.11.0"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.2"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "paramak",
+      "version": "0.0.0+r6a.snapshot.cd4ecfff4"
+    },
+    {
+      "name": "path",
+      "version": "17.1.1"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.2"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3"
+    },
+    {
+      "name": "scipy",
+      "version": "1.16.1"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "trame",
+      "version": "3.13.2"
+    },
+    {
+      "name": "trame-client",
+      "version": "3.13.6"
+    },
+    {
+      "name": "trame-common",
+      "version": "1.2.7"
+    },
+    {
+      "name": "trame-server",
+      "version": "3.15.0"
+    },
+    {
+      "name": "trame-vtk",
+      "version": "2.11.16"
+    },
+    {
+      "name": "trimesh",
+      "version": "4.8.1"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "typish",
+      "version": "1.9.3"
+    },
+    {
+      "name": "vtk",
+      "version": "9.3.1"
+    },
+    {
+      "name": "wslink",
+      "version": "2.5.7"
+    },
+    {
+      "name": "yarl",
+      "version": "1.24.5"
+    }
+  ],
+  "local_source_wheel": {
+    "filename": "paramak-0.0.0+r6a.snapshot.cd4ecfff4-py3-none-any.whl",
+    "sha256": "86876729f9ec1ec58dcc6ddca4bcfb46a0f5d6028a9216f1b8e19c95e20f0cf7",
+    "size_bytes": 34150,
+    "distribution_version": "0.0.0+r6a.snapshot.cd4ecfff4",
+    "scope": "Installed preserved wheel built from supplied snapshot; not a full upstream checkout."
+  },
+  "source_snapshot": [
+    {
+      "path": "LICENSE",
+      "sha256": "144aa405036e7401b989355eb2f8713ba7b87861e50e4c37e888ffea340f61d8",
+      "size_bytes": 1090,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/LICENSE",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "76fb790089524681cb1531abef8f845842b09e4e7933e0b667ef0b6f10584444",
+      "size_bytes": 1349,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/README.md",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "examples/spherical_tokamak_from_plasma_minimal.py",
+      "sha256": "d0508cf2ca98781001a9a6d3cffe51eb90b29053bac2ebae2a51b12547a01f5d",
+      "size_bytes": 598,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/examples/spherical_tokamak_from_plasma_minimal.py",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "examples/spherical_tokamak_from_plasma_with_pf_magnets_and_divertors.py",
+      "sha256": "743d7d1a6a2f693d735cbccec66275d10e471bbc8b1829a6814e8d3ca1fd281b",
+      "size_bytes": 1391,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/examples/spherical_tokamak_from_plasma_with_pf_magnets_and_divertors.py",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "examples/tokamak_from_plasma_minimal.py",
+      "sha256": "6fb5e00d9f162e8c9664eda39ee1293103c67c68701ff83f36ece57a1b862b80",
+      "size_bytes": 699,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/examples/tokamak_from_plasma_minimal.py",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "examples/tokamak_unstructured_mesh_simulation.py",
+      "sha256": "a5639d811a9c622f5443b2484d70060f9c3c204ded0384320a77ab88443eac6e",
+      "size_bytes": 6257,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/examples/tokamak_unstructured_mesh_simulation.py",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "examples/tokamak_with_pf_tf_magnets_divertor.py",
+      "sha256": "97e9cf1e0a768d996cb7d98365500ba05fdb076f10f450aff0561464e68c5a57",
+      "size_bytes": 2505,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/examples/tokamak_with_pf_tf_magnets_divertor.py",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "0990367a53f212b43c1572b86252a00be9e611bba1a075dcddc8f4810bfff0df",
+      "size_bytes": 1384,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/pyproject.toml",
+      "remote_retrieval_tested_this_run": false
+    },
+    {
+      "path": "src/paramak/__init__.py",
+      "sha256": "ec32c6daddf23679b0088036160f139b8cf45686688e1400edc43924c07a7567",
+      "size_bytes": 1704,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/__init__.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "ec32c6daddf23679b0088036160f139b8cf45686688e1400edc43924c07a7567"
+    },
+    {
+      "path": "src/paramak/assemblies/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/assemblies/__init__.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/paramak/assemblies/assembly.py",
+      "sha256": "7844792eb3fc23aa9f9cc3a2db59f5b6632a32912a287227a24790cef33d2886",
+      "size_bytes": 4800,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/assemblies/assembly.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "7844792eb3fc23aa9f9cc3a2db59f5b6632a32912a287227a24790cef33d2886"
+    },
+    {
+      "path": "src/paramak/assemblies/spherical_tokamak.py",
+      "sha256": "9e67e0b3834acb748ef313f245f4c9495ab8d5525e3835447a25c5f4a42789d4",
+      "size_bytes": 12283,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/assemblies/spherical_tokamak.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "9e67e0b3834acb748ef313f245f4c9495ab8d5525e3835447a25c5f4a42789d4"
+    },
+    {
+      "path": "src/paramak/assemblies/tokamak.py",
+      "sha256": "004aecffd264db8ce6cb6c9a6f84fd8e4f90f154aabf086c0fa2af5b8687dce4",
+      "size_bytes": 14158,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/assemblies/tokamak.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "004aecffd264db8ce6cb6c9a6f84fd8e4f90f154aabf086c0fa2af5b8687dce4"
+    },
+    {
+      "path": "src/paramak/utils.py",
+      "sha256": "b16fe639dd9c2ab8ef34cdbed32f1e2b41f457d3605f080e169880a9ea8aaba6",
+      "size_bytes": 11045,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/utils.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "b16fe639dd9c2ab8ef34cdbed32f1e2b41f457d3605f080e169880a9ea8aaba6"
+    },
+    {
+      "path": "src/paramak/workplanes/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/__init__.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/paramak/workplanes/blanket_constant_thickness_arc_h.py",
+      "sha256": "2d77c7542db1c23650062776875a5f8ca6074390e64002c0217f1ad2d6130b3f",
+      "size_bytes": 1386,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/blanket_constant_thickness_arc_h.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "2d77c7542db1c23650062776875a5f8ca6074390e64002c0217f1ad2d6130b3f"
+    },
+    {
+      "path": "src/paramak/workplanes/blanket_from_plasma.py",
+      "sha256": "6c907a27accf6dd5dba63123fbc05765ab047e9c2bb6852cfcc4f38183773cc9",
+      "size_bytes": 10474,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/blanket_from_plasma.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "6c907a27accf6dd5dba63123fbc05765ab047e9c2bb6852cfcc4f38183773cc9"
+    },
+    {
+      "path": "src/paramak/workplanes/center_column_shield_cylinder.py",
+      "sha256": "32a1ff8bdd53c57b94da9dc66118a386085fbf46b38a6399fdd749d6b7840235",
+      "size_bytes": 2829,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/center_column_shield_cylinder.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "32a1ff8bdd53c57b94da9dc66118a386085fbf46b38a6399fdd749d6b7840235"
+    },
+    {
+      "path": "src/paramak/workplanes/constant_thickness_dome.py",
+      "sha256": "3a18257d7f939297182f3d23eb058b5538a23441409ec5e951ab0588d74fae4c",
+      "size_bytes": 7953,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/constant_thickness_dome.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "3a18257d7f939297182f3d23eb058b5538a23441409ec5e951ab0588d74fae4c"
+    },
+    {
+      "path": "src/paramak/workplanes/cutting_wedge.py",
+      "sha256": "8d6917623ee3419d35f441ea2380f43c7b885d25b030773bac959203a0e5448b",
+      "size_bytes": 1366,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/cutting_wedge.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "8d6917623ee3419d35f441ea2380f43c7b885d25b030773bac959203a0e5448b"
+    },
+    {
+      "path": "src/paramak/workplanes/dished_vacuum_vessel.py",
+      "sha256": "05652ce7e9df9a2924493cab9f701527e2301172cae2a75ff6075ac9773d7208",
+      "size_bytes": 4645,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/dished_vacuum_vessel.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "05652ce7e9df9a2924493cab9f701527e2301172cae2a75ff6075ac9773d7208"
+    },
+    {
+      "path": "src/paramak/workplanes/plasma_simplified.py",
+      "sha256": "9f15d6ee949304fad6de9aa1ba96e415c96af654e3d1abfe8c45d66f8b7369c8",
+      "size_bytes": 2632,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/plasma_simplified.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "9f15d6ee949304fad6de9aa1ba96e415c96af654e3d1abfe8c45d66f8b7369c8"
+    },
+    {
+      "path": "src/paramak/workplanes/poloidal_field_coil.py",
+      "sha256": "6b45855ab69cb971abf5cea15e2547893a963211756b0ada3172ef3bdc5d73f7",
+      "size_bytes": 1444,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/poloidal_field_coil.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "6b45855ab69cb971abf5cea15e2547893a963211756b0ada3172ef3bdc5d73f7"
+    },
+    {
+      "path": "src/paramak/workplanes/poloidal_field_coil_case.py",
+      "sha256": "84bbf4ccfd11c40fcb9ac206baf21a3f838ee5bb40e837d56a04c9194fb3eb4d",
+      "size_bytes": 2721,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/poloidal_field_coil_case.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "84bbf4ccfd11c40fcb9ac206baf21a3f838ee5bb40e837d56a04c9194fb3eb4d"
+    },
+    {
+      "path": "src/paramak/workplanes/revolved_shape.py",
+      "sha256": "c6946458a81f2d4fe8282bae3c84e05dc263e4c148cdada4ef8cbef4a604e466",
+      "size_bytes": 2445,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/revolved_shape.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "c6946458a81f2d4fe8282bae3c84e05dc263e4c148cdada4ef8cbef4a604e466"
+    },
+    {
+      "path": "src/paramak/workplanes/toroidal_field_coil_princeton_d.py",
+      "sha256": "064a2b58468097f4903f901145f6cb09587e70558113f34e6c1d9d7df3b443cf",
+      "size_bytes": 8811,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/toroidal_field_coil_princeton_d.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "064a2b58468097f4903f901145f6cb09587e70558113f34e6c1d9d7df3b443cf"
+    },
+    {
+      "path": "src/paramak/workplanes/toroidal_field_coil_rectangle.py",
+      "sha256": "8fd50bdb6b2ff78390e2d8037e73e2b19893086a8710ba106fa679d2017eec76",
+      "size_bytes": 5040,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/toroidal_field_coil_rectangle.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "8fd50bdb6b2ff78390e2d8037e73e2b19893086a8710ba106fa679d2017eec76"
+    },
+    {
+      "path": "src/paramak/workplanes/u_shaped_dome.py",
+      "sha256": "bfd3d02bd3d88315168321d67cf9679e5d95fd798b8b024127263e5c67c8740f",
+      "size_bytes": 4107,
+      "publisher_url": "https://raw.githubusercontent.com/fusion-energy/paramak/cd4ecfff4aab9f30c945b45c2bfe91f6636d7219/src/paramak/workplanes/u_shaped_dome.py",
+      "remote_retrieval_tested_this_run": false,
+      "installed_sha256": "bfd3d02bd3d88315168321d67cf9679e5d95fd798b8b024127263e5c67c8740f"
+    }
+  ],
+  "restore_note": "Install all exact runtime package versions; install local Paramak only from this hash-verified wheel. requirements.freeze.txt records the original local wheel URL; relocate it using this manifest. External dependency wheel bytes were not preserved; no container image digest is claimed.",
+  "fcr_public_projection": {
+    "source_sha256": "f6bf95ffde9825c52db6a13a46cbb57c0f9aecf0968b0e8af490d9dde98389d3",
+    "edits": "Private local locators removed; geometry and runtime records unchanged."
+  }
+}

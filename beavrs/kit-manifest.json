@@ -1,0 +1,2108 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "fcr-2026-09-26",
+  "id": "beavrs",
+  "license": "MIT OR Apache-2.0; third-party notices retained separately",
+  "files": [
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "89dfccc78a9fcda5b55451f7c314cb98daa8e8b792782fc345307b5c480a7871",
+      "bytes": 561
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6bdf1fbf209335608d98562bf60987d59cebce5e536241133644bc0cecf030ff",
+      "bytes": 1126
+    },
+    {
+      "path": "inspect.py",
+      "sha256": "67c7fc25c7bd84a5efddd8aab11ba1ede28e91f74afbbbd9d72c3ca0ec743fa5",
+      "bytes": 511
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a5e9f9b1575301c7a7a03508fdaa2e05a918cc17fd21c6e898096a96d6a34f61",
+      "bytes": 9142
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "d34969654536366a6be609086d8bf321d0ef75f886321481511568ad0310639e",
+      "bytes": 1068
+    },
+    {
+      "path": "public/beavrs/dataset.json",
+      "sha256": "cc07ac7b2e005b0ebb336e0ab2c8653a83bcea8e5aa3ed78b56d78503c11e3bb",
+      "bytes": 142835
+    },
+    {
+      "path": "public/beavrs/detectors/c1-0.json",
+      "sha256": "be8dcdbe97d41ab39f960bb51761f08f03c35638fd5ab963659ea7f752af1309",
+      "bytes": 183888
+    },
+    {
+      "path": "public/beavrs/detectors/c1-161.json",
+      "sha256": "03f68daf1ebf7f3d17baf16a5375938a810af196d5d5725240c902e14307862b",
+      "bytes": 136630
+    },
+    {
+      "path": "public/beavrs/detectors/c1-169.json",
+      "sha256": "b433476112ae1eb7c9e92cd3503b7b80fe9ed00cba71329f6f3824290f1e3b3b",
+      "bytes": 171398
+    },
+    {
+      "path": "public/beavrs/detectors/c1-18.json",
+      "sha256": "55687079f1c7c0e4b116aa1a6bd751eabc42ad734663793b10c34d4e434aa08a",
+      "bytes": 161957
+    },
+    {
+      "path": "public/beavrs/detectors/c1-187.json",
+      "sha256": "a79458075a41a89db5564afd72b9e3101a7180ede20c75c533b80252f5d46022",
+      "bytes": 158728
+    },
+    {
+      "path": "public/beavrs/detectors/c1-218.json",
+      "sha256": "1fabae30c5ee27d78a7715fff796d06feb3ea59af634ff315d0d45fb4ae07400",
+      "bytes": 174465
+    },
+    {
+      "path": "public/beavrs/detectors/c1-251.json",
+      "sha256": "416cf0bdd80d1b6ec2de0dd3178074277711a35be253d0fbcaaa181577bbd4b9",
+      "bytes": 168188
+    },
+    {
+      "path": "public/beavrs/detectors/c1-323.json",
+      "sha256": "799bd303e38baff49ef6fe5340bdae80c0c606a336939736b5b99ee2cb078d9e",
+      "bytes": 171086
+    },
+    {
+      "path": "public/beavrs/detectors/c1-339.json",
+      "sha256": "04eba76241877588c08dc138d79a5fca77c318da3e28b83b6e19a3b57d02785b",
+      "bytes": 164977
+    },
+    {
+      "path": "public/beavrs/detectors/c1-368.json",
+      "sha256": "16f595a5762b5b713d3372ee9329574d3563c1a1333bc54c65390d26e2bf6f97",
+      "bytes": 149401
+    },
+    {
+      "path": "public/beavrs/detectors/c1-403.json",
+      "sha256": "6540bcd2cc4428f74fb54bbc6489c2d01c8cb051f1b2ad996d35ea22bcce4868",
+      "bytes": 155352
+    },
+    {
+      "path": "public/beavrs/detectors/c1-434.json",
+      "sha256": "89313b14fddead6f8382fef424ef3ee3da9decf23f842c9600f9a5062b14560a",
+      "bytes": 180612
+    },
+    {
+      "path": "public/beavrs/detectors/c1-468.json",
+      "sha256": "7a80965196f1bec8abfb08b55653e1a53b6528bccebe8ce7692c209879f2d39f",
+      "bytes": 149359
+    },
+    {
+      "path": "public/beavrs/detectors/c1-504.json",
+      "sha256": "5d1bf95097029e57ce9f0478c0bba663a5210c3bc6c03b45bf3ee73c53ff9168",
+      "bytes": 152992
+    },
+    {
+      "path": "public/beavrs/detectors/c1-54.json",
+      "sha256": "f84ff896484421d0ddf69deb8a9674420d8b53f116f51346e3f7ee10cd54b6ab",
+      "bytes": 152476
+    },
+    {
+      "path": "public/beavrs/detectors/c1-551.json",
+      "sha256": "c50b0ccfd123e640712aed4bb4d38527194181545fe44c7a19a523c03ed296e1",
+      "bytes": 161886
+    },
+    {
+      "path": "public/beavrs/detectors/c1-573.json",
+      "sha256": "45536dea0a78d9b4156cb1caa0ea28fcb6c7427080334eb09cd69df0fd314485",
+      "bytes": 161841
+    },
+    {
+      "path": "public/beavrs/detectors/c1-62.json",
+      "sha256": "b83ec8313ceeba0d0cfe550f6dc0a1467b706b72bbe772f5cfe050b07294f7c8",
+      "bytes": 152773
+    },
+    {
+      "path": "public/beavrs/detectors/c1-66.json",
+      "sha256": "8b07acbf57d7a01b419a47bd3fa31135fdcf4e90f7798634f245023b05ada77f",
+      "bytes": 162640
+    },
+    {
+      "path": "public/beavrs/detectors/c1-7.json",
+      "sha256": "fa8156f1bf76689a9caee6151bd14d7c63620728963d734d79cf4fe0ccd391a9",
+      "bytes": 180521
+    },
+    {
+      "path": "public/beavrs/detectors/c1-81.json",
+      "sha256": "f5731c7479718280fd3c2a33a9e04712ac6c765a9a2d5db0e253c687c898d8f8",
+      "bytes": 183813
+    },
+    {
+      "path": "public/beavrs/detectors/c1-82.json",
+      "sha256": "c75ff2e35d041b92eda516d208c23712fd83000344ade8a0a10e3200982e2710",
+      "bytes": 183708
+    },
+    {
+      "path": "public/beavrs/detectors/c1-88.json",
+      "sha256": "b4df6e064df0701067b5a9e1c5de3ffd3fc28936205255d92fc6275aacf4f57f",
+      "bytes": 183888
+    },
+    {
+      "path": "public/beavrs/detectors/c1-92.json",
+      "sha256": "835362bbab0936805f7746f2ed9e8c74d45a22e95075fb721d7780c2e0c8ed37",
+      "bytes": 183982
+    },
+    {
+      "path": "public/beavrs/detectors/c2-10.json",
+      "sha256": "9e1565402e640e6aa8ce0ef9d0ecf239d256d2dd8a2bd580ae80446d3e625abf",
+      "bytes": 168398
+    },
+    {
+      "path": "public/beavrs/detectors/c2-126.json",
+      "sha256": "9f967c21c6dd4106a73f01b8800053fe135f444de7c9de993fa64367e8e482ff",
+      "bytes": 158989
+    },
+    {
+      "path": "public/beavrs/detectors/c2-13.json",
+      "sha256": "a2e67b2d34b324e60eddd0baf84d2ba5ba7c5f5ecb31eb363c5a49f1fb823dec",
+      "bytes": 174690
+    },
+    {
+      "path": "public/beavrs/detectors/c2-156.json",
+      "sha256": "18d6e468b781a29714c60338c97e57c9cfd86aece8482b79f09fcb142ca9c88f",
+      "bytes": 168478
+    },
+    {
+      "path": "public/beavrs/detectors/c2-191.json",
+      "sha256": "acd073aa1c4617cdd227a2429d8553ea0ba7483b062c7d3b316e1f0ccdcba6bf",
+      "bytes": 174865
+    },
+    {
+      "path": "public/beavrs/detectors/c2-220.json",
+      "sha256": "39e0daaf9d2404aad7d2ec4ea241e9b31d09082cddcd6ca1c589a79f58a195cf",
+      "bytes": 168480
+    },
+    {
+      "path": "public/beavrs/detectors/c2-251.json",
+      "sha256": "7cba048972ba7f6182c9db21d686f087edf5ac5e7788e3a1df33e25959cf6b33",
+      "bytes": 174782
+    },
+    {
+      "path": "public/beavrs/detectors/c2-266.json",
+      "sha256": "d1c3c7700ae588a1b2092a66d20c99b86260b64ee9b69d0bfe1c4fc3eff76475",
+      "bytes": 174751
+    },
+    {
+      "path": "public/beavrs/detectors/c2-296.json",
+      "sha256": "7ce6ab5490bcb5aacc0a56fc17fac2caf50bafe00743fe6742e434f2d4cff6fd",
+      "bytes": 171599
+    },
+    {
+      "path": "public/beavrs/detectors/c2-35.json",
+      "sha256": "95bffee44415f2271518ab162394c2d3207ade892678b944e42a3f87a8687d05",
+      "bytes": 146474
+    },
+    {
+      "path": "public/beavrs/detectors/c2-42.json",
+      "sha256": "7bee7c1b50cbb344adca63c874e14e86f2e8506d78cdbb0eb8742240008cb75c",
+      "bytes": 146479
+    },
+    {
+      "path": "public/beavrs/detectors/c2-5.json",
+      "sha256": "a4e071f0482e5c22e82fbe994571be2901e6f7db2650785dc4decf381b93818e",
+      "bytes": 174337
+    },
+    {
+      "path": "public/beavrs/detectors/c2-65.json",
+      "sha256": "927bb65095bf1654abe620fb4d7d6c158b8b1b28228fdb1f3824f2316aa83a21",
+      "bytes": 149771
+    },
+    {
+      "path": "public/beavrs/detectors/c2-93.json",
+      "sha256": "8123f44b06e29addc6f57cf3e5ebc9e4f4040a857bcdda7f5bcccc4b7a0d741a",
+      "bytes": 146379
+    },
+    {
+      "path": "public/beavrs/LICENSE.txt",
+      "sha256": "1d1b6d1266b5bf6274c169ca0caef559ad2e6e9b3e99b02303a8b3041a54a135",
+      "bytes": 1086
+    },
+    {
+      "path": "public/beavrs/manifest.json",
+      "sha256": "0f317e677e2b30ee946366c3e068685c8a51e51cbc68b4890789addcbd843e8c",
+      "bytes": 120755
+    },
+    {
+      "path": "README.md",
+      "sha256": "348081882ef11d2f79540d2ad3eeba69e021de0100aa3451dd8624486f6b5c14",
+      "bytes": 2311
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/backmatter/element_masses.tex",
+      "sha256": "943f6f325eaaafed431b675808cfffceb45008afaf432da793943c4f91aa68e5",
+      "bytes": 624
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/backmatter/isotope_abundances.tex",
+      "sha256": "9e4c9d2a7c29a9fbd7a45b32186e5a16d5b76b75461aec9634fe1fdfc3b0ddce",
+      "bytes": 1776
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/backmatter/numrefs.tex",
+      "sha256": "f8ee1beb4e89dfd277c054875c06999fffc73d2be3b83690669f36205f531e11",
+      "bytes": 71558
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/BEAVRS.tex",
+      "sha256": "68dab48ab4ef9beceffc4493fde6fe2cea24c9d36ed455575131a5ba3e74e4a9",
+      "bytes": 1231
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/discussion/discussion.tex",
+      "sha256": "75f9189a5dae3bb9f8231cceeb78f4d411f4813f8f4d8c659d17a557eca53625",
+      "bytes": 24
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/expdata/expdata.tex",
+      "sha256": "13eea6a808136dfee603d607cb1ac97ededbdfb31a7bb6a8728a937aa183e801",
+      "bytes": 24609
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/expdata/figs/radial_measurements_full_tc.tex",
+      "sha256": "67e056652fb27934f0a27f77cf0adca2a3fee3f448e54ffb43729d5c91fe505d",
+      "bytes": 38081
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/expdata/figs/radial_measurements_full.tex",
+      "sha256": "34b2014c8837e66b34740aee075e21006189dab16033feaaa3d669e940a83fcd",
+      "bytes": 33822
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/expdata/figs/radial_measurements_quarter.tex",
+      "sha256": "e23074bea231da53812e97971cf7b9ad2b905976a6389766ca2c1774fc7d2e2f",
+      "bytes": 22977
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/abstract.tex",
+      "sha256": "43b00312e04ca645fb1d6130202f0bab233af7300968f5393c9177d78f95094b",
+      "bytes": 1432
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/acronyms.tex",
+      "sha256": "280d900b3d56e8761d65d8b0f4e15e54367197c7234e05f3a6ca457e4ead1401",
+      "bytes": 870
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/authors.tex",
+      "sha256": "a145011c60e96903be7e0e8822625fe62d0deb17a3df6ba16e83359d4c58c1e5",
+      "bytes": 1377
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/changelog.tex",
+      "sha256": "2583f567ebcc36d5c90c8ce525b71afcdfec40cff4346fbba841a013a8d0c07c",
+      "bytes": 6602
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/environments.tex",
+      "sha256": "bfca0015c3095e2f1984ce1d84917f3b39de3d1f29f8fd6f25f960137d55947c",
+      "bytes": 2524
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/frontmatter.tex",
+      "sha256": "2efc56c754b9ee6d77fd6992291af69c4728fc97b59f2c87d91ac96ae62d79c8",
+      "bytes": 1656
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/frontmatter/preamble.tex",
+      "sha256": "55010d834d09316d6fbd473389ea9503fffc09b85e08fbd56c0d6e96a66da9bd",
+      "bytes": 5942
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/intro/intro.tex",
+      "sha256": "ceabfdc250eda5814acc4bf1ee6b4c73b7a431dceee9df35b6960706390287c8",
+      "bytes": 3595
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/corefig.py",
+      "sha256": "3ef40f156991d7a727436e4d11e56a6525b8d73b6ca15179f6d6e7cbafd17d7c",
+      "bytes": 147087
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_assy_figs.py",
+      "sha256": "db548e82aff274b50c6ba3022aacf36659fc7a7881a68b63a8d14b52ba871792",
+      "bytes": 17895
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_axial_figs.py",
+      "sha256": "6f444893d95f144ed73cb9c8a98288d2b3bb3fd0c83f4ef3a5a8fd4845c75c54",
+      "bytes": 33160
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_core_figs.py",
+      "sha256": "f8075dea11ffccde214d5bc7e95291f4b2c78c761bfd04752524bbf400220bc5",
+      "bytes": 13078
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_grid_figs.py",
+      "sha256": "0b1b913c637879ae787a5f864eddd3a1b9b4bb0781efc9ba2f3a4ab297eeb5ef",
+      "bytes": 3625
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_materials.py",
+      "sha256": "a216c1f561ee657c41aa2c2dbbf0ec01a14ec44982186e763cc15649c9aed428",
+      "bytes": 6150
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/make_pin_figs.py",
+      "sha256": "96b2078d32ad378ffeb8a695f1f72d220fb23215f67f6646652dc71a42291e5c",
+      "bytes": 7351
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/scripts/quarter2full.py",
+      "sha256": "65291fe1d9bc2fafd8c911ba6adb8d21705ad60bd69a9d10f788f5507126e632",
+      "bytes": 3154
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/assemblytypes.tex",
+      "sha256": "c79287a7515cd74701c1b91a206f56d3c6b2ac2719820c79dabf8bc9e4332072",
+      "bytes": 7572
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/12ba_c2.tex",
+      "sha256": "b6b074d3c7e43e0f99f10e246e9dca8ee529bed4290738940a696199528295e3",
+      "bytes": 30651
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/12ba.tex",
+      "sha256": "6e397a4d6f9b8a9335ab7a9bae3fa850ff0f3458e46b70a8570b789d67202d9f",
+      "bytes": 30645
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/15ba.tex",
+      "sha256": "beb6e65b60d7434cc7ba11b7b7018323eec13f02f23c7fc62d1ca9ce4171459f",
+      "bytes": 30681
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/16ba.tex",
+      "sha256": "558f63e5ebe79b2264289267883f96d293484bd4f0190b9688dc98db0d9a7ca1",
+      "bytes": 30581
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/20ba.tex",
+      "sha256": "61e0ecbb7c45c4d40cb7da55f44c2b8d1754da6e36c3f371b76961c515419047",
+      "bytes": 30541
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/4ba.tex",
+      "sha256": "4084051a03f67545bbe872f463115f07e1fedfb4e558f1be50ae44c7a120d829",
+      "bytes": 30697
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/6ba.tex",
+      "sha256": "7650015c4e1a664c85b1036a275813e46d1677a0c0c26d2d2c958aa0c87e50be",
+      "bytes": 30771
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/8ba.tex",
+      "sha256": "6936d619f3245db3e1d287ca70bacb3aca463defc600a43ed8d74a72eaf06a2b",
+      "bytes": 30657
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/ass_layout_setup.tex",
+      "sha256": "c5de07848489718943ac5ff8ed7329fba243796387f46591ef210ac84cce1326",
+      "bytes": 25314
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/base.tex",
+      "sha256": "72e8e095f877f891cd78245c46eacb3d04df4434d31dfe00ca533771558b7f2e",
+      "bytes": 30685
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/tikz_grid_inter.tex",
+      "sha256": "67a01b2c0495ca3c8a60144c55b018be56cdbe5063d27452e368bd615dc92ac3",
+      "bytes": 1966
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/assy/figs/tikz_grid_tb.tex",
+      "sha256": "2e06e1a8ccbb6324e31b6fa990072281e20cbb050bda0fe06d4dd8cfcfb3c84b",
+      "bytes": 1965
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/axialspec.tex",
+      "sha256": "56a782871a0787d37e6d2e20145682d2e3d1bb6dce219c40943d3653252602d5",
+      "bytes": 8848
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/all_axials.tex",
+      "sha256": "52fcc7a76d4eb410cd804385072e52e1863219baab0187edf1878c71c605a03d",
+      "bytes": 7837
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/ba.tex",
+      "sha256": "0f4b59e8a19f27b218f1566426232a02e5007ec63ccd7e98f56267be85c9c9f1",
+      "bytes": 11629
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/cr_seq.tex",
+      "sha256": "bc6f3c31915f446eda8f7202a0584ce5323d96994f62005971b96cff2cd0b464",
+      "bytes": 2576
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/cr.tex",
+      "sha256": "6739164794ffb1e042df893b5d6d9f0dcfa4daf5ac98b4d69af64426d20f0f90",
+      "bytes": 4627
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/fuel_rod.tex",
+      "sha256": "06a01d9a6aac8886e0ba8aa4d5cddfd1540e1bb2a4896f6b90a5e9614d48ef16",
+      "bytes": 9997
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/guide_tube.tex",
+      "sha256": "29303f47c97b1014e84d545b7f061cd15a1bd2b0b555c9a410a29372b364d702",
+      "bytes": 9774
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/instr_tube.tex",
+      "sha256": "054a42a75e821e25043aed6bb9b7cb5224833a93671cd141cd59687daba82943",
+      "bytes": 8346
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/axial/figs/tb_detail.tex",
+      "sha256": "5bb9ba05aa8fe80b7d7a7e4eb5f21d0a4cf108870998f75ff5986be394546d81",
+      "bytes": 3356
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/corespec.tex",
+      "sha256": "faad3c36ab323e1318e02f46c65a735533bd04140a01c3b0f5a935712370053a",
+      "bytes": 5070
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/cat_cr_pos.tex",
+      "sha256": "15d1289583cbf5c89ca0fadea5cea2654f1df199bfd3176b65e11ec0d44dd596",
+      "bytes": 24753
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/cat_enr_ba_zones_c2.tex",
+      "sha256": "192a5e297c1778acc40adb859ca5c2a9b1857c75366ec5981d1c66aa79144a2d",
+      "bytes": 27452
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/cat_enr_ba_zones.tex",
+      "sha256": "3cc7c282ff7a769f46c1220f26a0b294616a9fbfacdd93c2b28bd9a67206b30b",
+      "bytes": 27510
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/cat_instr_pos.tex",
+      "sha256": "3f5d87eaf6c60ee6a2f3492a6f679a2806c296f42da166878c177be3708b8847",
+      "bytes": 24192
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/sea_cr_pos.tex",
+      "sha256": "ccdb5d81167050f6fd6e0e4df47db4415c6726d58cbed9235c7b2620b7e2a1f7",
+      "bytes": 24477
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/sea_enr_ba_zones.tex",
+      "sha256": "4044915e055d705a63270c9efcc7873f9a1c55f687bb5ff030c20e93962bf5ad",
+      "bytes": 26913
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/core/figs/sea_instr_pos.tex",
+      "sha256": "9f2daf5c13cf63f527864491f947a044306176a9dcf662f4488ea6d28acd6387",
+      "bytes": 23868
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/aic_rod_disc.tex",
+      "sha256": "4cfa83cdb9f356aa9009d225e2eeee6cbdc1fd237546befc732027cb25096b76",
+      "bytes": 56
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/air_disc.tex",
+      "sha256": "75b9410f48eb6e0f3410d5c42ec2ad9af55162cade7a7e87808375ed0639f97a",
+      "bytes": 52
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/b4c_rod_disc.tex",
+      "sha256": "7d7bb81464c670fc88cf7d015806dc0b69ce755ca0d5f5f35c597a0c33915c01",
+      "bytes": 56
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/borosilicate_disc.tex",
+      "sha256": "be3183e94e58a4bfe169e3ceb81e0f28ae35bf6241119165dbd8c28d833ecc0b",
+      "bytes": 61
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/carbonsteel_disc.tex",
+      "sha256": "55cd526e3026c7b019b95d7af9048b039256e0bd0a9602785bfd43196ab8910d",
+      "bytes": 60
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/fuel_disc.tex",
+      "sha256": "f20cd9812b9e7de69bfbe0b4460e54f5306ac28ed5d3b8fef6854e6ebc7357e7",
+      "bytes": 275
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/helium_disc.tex",
+      "sha256": "3eb29242f11157d23bc730af72dfb31f8a9d3be1a2f73059340bbb49439150d6",
+      "bytes": 55
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/inconel_disc.tex",
+      "sha256": "8c8dbd8744aaad7c690f650361c120784ec5dbe407b986b6f881802b2fd0f7af",
+      "bytes": 56
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/ss_spn_disc.tex",
+      "sha256": "9734f1cdf0fe8b0b263de13fb54994a8fd921758f2e666f6cde34ff5e8903cbb",
+      "bytes": 55
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/SS304_disc.tex",
+      "sha256": "7f12557c21e36360a2646690358efd12dc214505d3fdcf1198327ae4138fabed",
+      "bytes": 54
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/aic_rod_table.tex",
+      "sha256": "accdf6883e88f0fa1e1b57ebf5aeab6a3539b310d9ce461b7cfe543664441bbb",
+      "bytes": 540
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/air_table.tex",
+      "sha256": "aba27d0f911b63e023b727cb04dcd6c0945de58594d048edad9c66fee9d85603",
+      "bytes": 456
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/b4c_rod_table.tex",
+      "sha256": "d6aef3e391c5d599360687919908176e70c0e79cc20d544efbeef001f6b79d85",
+      "bytes": 350
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/borosilicate_table.tex",
+      "sha256": "2b9b95bafe2bc3b27280da67a1e99f834d6a625cb7bcdbdb7768676451bb8c72",
+      "bytes": 466
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/carbonsteel_table.tex",
+      "sha256": "095fedfdf31e7b132e8a90ef82cdd66eb616162b96accfbcb291cd3a42823098",
+      "bytes": 1304
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/fuel16_table.tex",
+      "sha256": "02d56387251602b47d83def89149ff36da5fb040404b80d3b5c80468713052da",
+      "bytes": 398
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/fuel24_table.tex",
+      "sha256": "4e5fc9d8cb53becb38f9ccb4eae27a59af9a98ea5f593ff0bf977f4038f4ca3b",
+      "bytes": 398
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/fuel31_table.tex",
+      "sha256": "e399f57803185c87342492ddadc1a20642f0742468189307a70034de7b4472d2",
+      "bytes": 398
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/fuel32_table.tex",
+      "sha256": "8196c1f49f9452ee2d945d33e1ed241808339f6de4e83dfe9af0e72970dd4913",
+      "bytes": 398
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/fuel34_table.tex",
+      "sha256": "6ba1cd4fd2a547d474d898ac3152e364510d424283a0c6579c96ee91d0a63338",
+      "bytes": 398
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/helium_table.tex",
+      "sha256": "11f238b41eb888366af1f00f966d61c9d2ee0e90308d95e4028e3b62210e4aa4",
+      "bytes": 303
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/inconel_table.tex",
+      "sha256": "bbf3566a5c9ee2f1ea4377531d11bf077c5ca4930eb23731812a0066be33c804",
+      "bytes": 621
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/ss_spn_table.tex",
+      "sha256": "9c6e34f62b278c32bac5b9b082ee051f81aaae296189a67cf6fdf9e398171f87",
+      "bytes": 653
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/SS304_table.tex",
+      "sha256": "c5fba450cb4495b897fd4a3d989e4ee69795ce77f8e5c67d0ef2e2ec424b7108",
+      "bytes": 626
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/water_spn_table.tex",
+      "sha256": "10abe6425e2d2e20f6b67ef00b7ebac83b55dde5f757c1ed422f112c758d8220",
+      "bytes": 439
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/water_table.tex",
+      "sha256": "590fc6a41474a32b9b4478264a5fa8a9561e2f0d9531fab3cd1ade77a2dc7628",
+      "bytes": 408
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/tables/zirc_table.tex",
+      "sha256": "9060170231d50900c8915deef18ceb32ae63324e2dc1d9feca599408a036ce85",
+      "bytes": 811
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/water_disc.tex",
+      "sha256": "5a029804b4755de730bea172cd0b9a27a2b0782c81acbb6f3dda1b0b4cd40a85",
+      "bytes": 54
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/water_spn_disc.tex",
+      "sha256": "ffb2335aff64f296b7aa68188bd4f44a1925eff6e8848608c1fffbd4a0089360",
+      "bytes": 58
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/materials/zirc_disc.tex",
+      "sha256": "5414d232602cd27b2430d5b9ebefd9f888553da9dceb68b5dde4ad1a08caa7da",
+      "bytes": 53
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/ba.tex",
+      "sha256": "ba29443e228c49d186f75fc1f6e4c1541c93c2cddc81ad70fcaff8ebb194cba9",
+      "bytes": 257
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/cr.tex",
+      "sha256": "a06c2591d7eeab25ae7b9a0e9b1665c8cbc395cc55b8adf2b97aca5469e59013",
+      "bytes": 538
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_ba_plenum.tex",
+      "sha256": "6d69a0ed09d1aff79a912f839fcec192d7903008b1e9e78a8983bc781cbb15f8",
+      "bytes": 1313
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_ba.tex",
+      "sha256": "1ec1afbd2f6757dc8e02c1b8a5c32fcac9711d7858bb3ed2a1d7c6272158b1ac",
+      "bytes": 1703
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_cr_plenum.tex",
+      "sha256": "a8f9f2743ed9846452f8a7aa1dafc2fcabd91ddd92a9c7c0c4aef01436100da5",
+      "bytes": 1133
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_cr_spacer.tex",
+      "sha256": "59d5ad4ff02e450fc4d33bde925d77daa73d496ed9e9ab4dcddcf2a3f74c0aae",
+      "bytes": 1118
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_cr_upper.tex",
+      "sha256": "54e6b987bda84c00aaccca969e1470e8a61bc7c528dc63de0b136dde2ac13046",
+      "bytes": 1115
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_cr.tex",
+      "sha256": "70d1c66623327da589d6d9e4f561259ace531bc352847008e5708b5bfc90aa4f",
+      "bytes": 1120
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_fuel_plenum.tex",
+      "sha256": "efa44174d2379a979310145dfb32419a4d374019a4fd83309b4b828f835c18ef",
+      "bytes": 767
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_fuel.tex",
+      "sha256": "9239898b7c58cebde910b2400b74734233109866697a425b679afcdfc652ba14",
+      "bytes": 760
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_guidetube_da.tex",
+      "sha256": "4d50ebdbe5adb9f2573abf932168be36d89e890f100781d40cda8bfae7deb180",
+      "bytes": 579
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_guidetube.tex",
+      "sha256": "328da290f5b80f55ac2dde91a4d8656c92f685b26774f184e09185705bed9ab2",
+      "bytes": 576
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_instr_bare.tex",
+      "sha256": "3aed36618731e3254e34035b5e5c4d8fb936acc23a21b9dee57b2fc3dc3e71a7",
+      "bytes": 574
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/figs/tikz_instr.tex",
+      "sha256": "1556c418514670e76a086a3f2ebf15d61bd88da36a571208d6270d95333335a0",
+      "bytes": 935
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/fuel.tex",
+      "sha256": "e7585c05dbd0e8e5252c575294b75fc05cc97ec7c8e3dfc212d50a7571078943",
+      "bytes": 394
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/guidetube.tex",
+      "sha256": "43bbceebc2536657a904dbfa6a604c02f1261642924b47a1157f03f675f0129d",
+      "bytes": 297
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/instr.tex",
+      "sha256": "808fc3284a2bcf9f4d11ab64483458b714c5615aaba38b27dafbce1baef7ea31",
+      "bytes": 714
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/pin/pintypes.tex",
+      "sha256": "19eb12b39a20db3e15f20c1c83961a8d4ad499482e2a1c52fa1fceba635c1d0d",
+      "bytes": 1535
+    },
+    {
+      "path": "research/beavrs/source/docs/specifications/specifications/specifications.tex",
+      "sha256": "1ac0506caf7459ab3cf04803b9326c72a5ac650083cfe341d50617bcb1b4ba74",
+      "bytes": 8397
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/cyc1_lm_eighth_map.tex",
+      "sha256": "d8fc1e5161d93cd773a1b139d3304f2761016f517a56bd81ac5107a7231a5b46",
+      "bytes": 19949
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/cyc2_lm_eighth_map.tex",
+      "sha256": "e2c27276b36d679821becca773757d795bde796d223d9908fe15f8916731064b",
+      "bytes": 19950
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/radial_measurements_full_hzp_tc.tex",
+      "sha256": "553425a90121746194ec8b87e2363f581e5638556f62a86a22d2661cfc94e6a4",
+      "bytes": 38251
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/radial_measurements_full_hzp.tex",
+      "sha256": "62e9eaee792353bdf5e0d1915ed5ee34cfc25160f78c17f4a524980e03d71b2d",
+      "bytes": 33528
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/radial_measurements_full.tex",
+      "sha256": "bbda424ec543a383a4878c1acf3de3d4b22390b1c0a8c1a26887b1aa3ec1050f",
+      "bytes": 33523
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/sim_cyc1_eighth_map_1.02-1.51-2.16.tex",
+      "sha256": "74452f14e24f2786bebd3491cd2de8dba7a04a676fa0687d369469c7bdeb2678",
+      "bytes": 19937
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/tc_eighth_map.tex",
+      "sha256": "18e673b596046a9f1498ce7b98ffd38869da0a673024b469b34eb0dc76099fea",
+      "bytes": 19621
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/test0error_final.tex",
+      "sha256": "d65c78f4a169e0b2da268b8013c4609ada7d08b19aa5a8f048e7b21e3960ca19",
+      "bytes": 34040
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/test1error_final.tex",
+      "sha256": "7a2e6316b90286bded9dbc129c0e1b04c16f15f5429a9bd6c43438c4a23e538f",
+      "bytes": 34105
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/test7error_final.tex",
+      "sha256": "d3ef74d3eb8b46b4c9d552a463682bdf03e262420d768aa6591ddd24dbf4f29e",
+      "bytes": 34142
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/lm_cyc2_eighth_map.tex",
+      "sha256": "8f079985a44c4a447199f7af47af7af80fc866e53250c73a868c9cf2fc4e112e",
+      "bytes": 19838
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc1-eighth-map-1.02-1.51-2.16.tex",
+      "sha256": "4c624c8a70bd8355bc69f404011945b205ee9a4e55e68847f8dd636f3a09e7e1",
+      "bytes": 19873
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc1-eighth-map-3.3-4.61-6.49-7.51.tex",
+      "sha256": "f2b10d2a699f6c4751d7587058367fe592f8ae53579e489baf918f4d9e6845a3",
+      "bytes": 19941
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc1-eighth-map-8.7-9.8-11.08-12.34.tex",
+      "sha256": "fbf487ba67713d73745d46a4f91d07c16b3949102fd13bf5bd5296ce4e3257cf",
+      "bytes": 19943
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc2-eighth-map-0.23-1.14-2.11.tex",
+      "sha256": "30004f60904cc321cad6ffbd0cba84c0cd5fbae6fc8327390dd95a134a055d9a",
+      "bytes": 19810
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc2-eighth-map-3.2-4.04-5.23-6.52.tex",
+      "sha256": "6ddbb645c0e2cd630c5f7629b8213c5973b2883d4c7b406c8a52bf1789a954b5",
+      "bytes": 19881
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/figures/time_series_analysis/sim-cyc2-eighth-map-7.71-8.73-9.36-10.43.tex",
+      "sha256": "2927fa6cce7af4dd0999f9856a3510c3939829b38f84e8d03f6f9e9da9454e3a",
+      "bytes": 19945
+    },
+    {
+      "path": "research/beavrs/source/docs/uq_report/uq_report.tex",
+      "sha256": "ed87dd3c615d266d092a218cf265db0022da9abdfa66fefcd267051439671ece",
+      "bytes": 127028
+    },
+    {
+      "path": "research/beavrs/source/LICENSE",
+      "sha256": "1d1b6d1266b5bf6274c169ca0caef559ad2e6e9b3e99b02303a8b3041a54a135",
+      "bytes": 1086
+    },
+    {
+      "path": "research/beavrs/source/measurements/assem_mass_loading.csv",
+      "sha256": "6ed6745256b6074382851093fec2b031f25036458fdef955935f31fe12812eca",
+      "bytes": 8669
+    },
+    {
+      "path": "research/beavrs/source/measurements/boron_letdown.csv",
+      "sha256": "ecca561f19a76dd22f8261e72381ce3e1cb9db6f375ed1608ae8c1a92b10b1fd",
+      "bytes": 772
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/axial_signals.csv",
+      "sha256": "466a49a607716f7f0063ab711be6696d2a45f683e8b9160ed156a802d79e5088",
+      "bytes": 151813
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/radial_measurements_all.csv",
+      "sha256": "38f38e4700e68b763dfc201eb69e34d7edf5360d80aa15068cc4ba284ca53212",
+      "bytes": 12867
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/radial_measurements_full_tc.csv",
+      "sha256": "cfe7533406863b05b40dedbef1407428b77bcb10abdf50794a8dbce15f577d1b",
+      "bytes": 3310
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/radial_measurements_full.csv",
+      "sha256": "23defc977e0657183ea27cfe061d1946c786481605bee1f0d10e6c638405ae2b",
+      "bytes": 1675
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/radial_measurements_quarter.csv",
+      "sha256": "1c465aca2b7e7bcb83625674ac8d055798f97935352e687f8549aa81741388a2",
+      "bytes": 1037
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/0/summary.csv",
+      "sha256": "de499ac19a70a052e88e0331ad303fafdba8514c52544ae4b084f0792b2fec9d",
+      "bytes": 1146
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/axial_signals.csv",
+      "sha256": "56ef3175639875a216f8b6104b12461720dbacaf9ef061e3b52c01da47383fb2",
+      "bytes": 112825
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/radial_measurements_all.csv",
+      "sha256": "25b2a79dfc82730f9504c2c6abfb00672c2473878be2dd10119d40747f8a12a7",
+      "bytes": 10999
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/radial_measurements_full_tc.csv",
+      "sha256": "98a0dd0a0a18094432d15cbf66ce529a1f2c0c2b08b24aaee01768cd52037b1f",
+      "bytes": 2924
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/radial_measurements_full.csv",
+      "sha256": "7b0fe7ef61c68fb626872ab02ebc41b3ae34d215753fee68aa50d0f94141284d",
+      "bytes": 1311
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/radial_measurements_quarter.csv",
+      "sha256": "3df6c97e6d099b88e628fef5ccc80015dd7b641c98f84681dc68e8f2c1796891",
+      "bytes": 886
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/161/summary.csv",
+      "sha256": "a980df21943fddee4c6617e5cfad1c07cc3492b2c8f10dc070b316ba34535abb",
+      "bytes": 862
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/axial_signals.csv",
+      "sha256": "7a020353ebbc1b1f2c4cdb514cfbf605fd24e71378e39f0d29487a8a4f36f4a1",
+      "bytes": 141498
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/radial_measurements_all.csv",
+      "sha256": "1bf9a23201ebe89b6dbdd009b290480da32354519f766de0bef1d9146350b429",
+      "bytes": 12700
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/radial_measurements_full_tc.csv",
+      "sha256": "b4f346ca78118d9f7f8759a05c4f6e5d5632f080e7c07c7c253949cdbfdecfc8",
+      "bytes": 3290
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/radial_measurements_full.csv",
+      "sha256": "562046d99ad33c30596b89a2531b04b235cee9f9aed158d2830ec652d2c19fd3",
+      "bytes": 1586
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/radial_measurements_quarter.csv",
+      "sha256": "2d08fcdd78d0e8570608773e3b27b521b0390b0e528db24399f456cd79c81d5c",
+      "bytes": 1010
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/169/summary.csv",
+      "sha256": "fbe0337aa12f3a7669ec72824aaf99f92289b94723871626c7609a14c09b32de",
+      "bytes": 944
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/axial_signals.csv",
+      "sha256": "c0b2a639b59edaf69c5d5a2e1029b35f45c251337e8d078dc4ba0c946f2f76f8",
+      "bytes": 133682
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/radial_measurements_all.csv",
+      "sha256": "ed3e7fc87627a21dafb5842b4b15014a8b0f9ba59a644b778b45e2c5d9a420d2",
+      "bytes": 11657
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/radial_measurements_full_tc.csv",
+      "sha256": "2f4cfbb9005d2e04d4c97c673b8c4b1fc62bac249f3d6d90a17aba18fc8d0609",
+      "bytes": 2978
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/radial_measurements_full.csv",
+      "sha256": "ee31efce812b8bad19df88ffe5ed219d2980cfc53ffe93e3d6a121406acbba61",
+      "bytes": 1491
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/radial_measurements_quarter.csv",
+      "sha256": "8537570b83bb3fac509aa38a320736d5a016b8495cf06636cf57265a6eb0736e",
+      "bytes": 940
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/18/summary.csv",
+      "sha256": "6b9542982824f7b5cb812baa8ba2433092bcc9fd1759634b9f40d163ea1698bc",
+      "bytes": 926
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/axial_signals.csv",
+      "sha256": "a428344c0d974a849cc515c8b25bcd8eec7ac92213d8de3226c3fc001b546c76",
+      "bytes": 131008
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/radial_measurements_all.csv",
+      "sha256": "94eedadaaabcfb2e99e1cc284af7461cbb6fbcfb78aaba17c1b84bd90d496972",
+      "bytes": 12093
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/radial_measurements_full_tc.csv",
+      "sha256": "a5c39de999c50a5c42888eca8610b706a255cfb39df681229431c8abb1f5e1ee",
+      "bytes": 3152
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/radial_measurements_full.csv",
+      "sha256": "f25fcf5f88d6c26cdb308be5ed6fd53441cc3d5ba7ee1bc193ff532971fac2f7",
+      "bytes": 1492
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/radial_measurements_quarter.csv",
+      "sha256": "27218fd3063c2a624bde2a9c3c845797f279ec1ad2006be2bc8f792751a641c5",
+      "bytes": 983
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/187/summary.csv",
+      "sha256": "2a9e2efe7ee2ff7c7f1c72bf875d745af8e563e100cddc18a8f3cab9fd5a8517",
+      "bytes": 921
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/axial_signals.csv",
+      "sha256": "83dd8e9d3a08e96385645fabc4390c0ef093ca69b4b60dbe4f91761a698b977a",
+      "bytes": 144026
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/radial_measurements_all.csv",
+      "sha256": "efe98e0a0d375b0c7dcbf60dbcee337f7e9deaaad2e1c2cf9d1f6d0d59afdd08",
+      "bytes": 12810
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/radial_measurements_full_tc.csv",
+      "sha256": "3c5d0cc50aa08802c77065d4578904fc0e93be49933104b6d619653089bcd12a",
+      "bytes": 3306
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/radial_measurements_full.csv",
+      "sha256": "594ad805a8a7cbea60071cbfd999f246e652beed90b0c97ae4b1ddae142ffa22",
+      "bytes": 1604
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/radial_measurements_quarter.csv",
+      "sha256": "35c57fae0a1abc91c8eec1d4ad8445e5148b998299a8f9742509af92e0d1cb92",
+      "bytes": 999
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/218/summary.csv",
+      "sha256": "95473756cb4e2d6f803e55067241df38144e6b4e71088912ca6f13ee10b2f434",
+      "bytes": 890
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/axial_signals.csv",
+      "sha256": "9ca5bb82140ba202c13cb92de3b83b26a1ad94ae6d98b494af4341e742624b7e",
+      "bytes": 138848
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/radial_measurements_all.csv",
+      "sha256": "d424d303d30dea5ffe832976cf6e3c3901400a7987b85db84c8764734d34fa74",
+      "bytes": 12199
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/radial_measurements_full_tc.csv",
+      "sha256": "4142f408de21139e2774a7c4c393a1adac0ba95147208c37f376b43dc1da82cd",
+      "bytes": 3120
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/radial_measurements_full.csv",
+      "sha256": "3d06b87d5a4fb03b94052895a5ab2af6a7c2559fe1abaad4bf4f46dc1ce73082",
+      "bytes": 1541
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/radial_measurements_quarter.csv",
+      "sha256": "09ee99423be197eb5061bb5e4aaac83da1f68cba2d44219d468afeaeef2b601c",
+      "bytes": 979
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/251/summary.csv",
+      "sha256": "4f7fd2770affbf99c0242b4ffa6d4fe736dfc8163e20349996ab4ff80fcd5f8c",
+      "bytes": 903
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/axial_signals.csv",
+      "sha256": "06138385b881e22702153d0ac1d61f8f30ebf404e0c8ed3fe4ba24fb4faa875a",
+      "bytes": 141393
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/radial_measurements_all.csv",
+      "sha256": "39596c1dd9f206e608303bc782e1403116ad7716d31846fa066cf2f0c31f3200",
+      "bytes": 12285
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/radial_measurements_full_tc.csv",
+      "sha256": "e5bdefd61dc4b59b937b09f6c390a82721d2cdd50a4327bb190ddf4441bb791b",
+      "bytes": 3128
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/radial_measurements_full.csv",
+      "sha256": "1c247a587dfc0c80c9642cca10ace4e9ea6819c3b317c45e457d610f5c85079f",
+      "bytes": 1563
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/radial_measurements_quarter.csv",
+      "sha256": "dbed2db6a75a9fddf1b5882310fa53ea5bffb1b794617b88abc36da70ede2088",
+      "bytes": 982
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/323/summary.csv",
+      "sha256": "dcf416f45b339be00e523adf9cb0e6d434b8696e3a27c55a9849785133a29402",
+      "bytes": 820
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/axial_signals.csv",
+      "sha256": "7d5436911fdeabee76da82e9faf2e43cab929f05aa553d034cddf7491da3e645",
+      "bytes": 136333
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/radial_measurements_all.csv",
+      "sha256": "47107b617862e344b714b8f10fdfb432e22d69da7c1834a37802899fa8999014",
+      "bytes": 12119
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/radial_measurements_full_tc.csv",
+      "sha256": "8ae2515bcfe7218eff0efeae38c7eec7c27867166a09b3c58c774fe5c8be210e",
+      "bytes": 3114
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/radial_measurements_full.csv",
+      "sha256": "cc507ae45631b2b5c2cac76489bfcb561ff29a3bf71f3a3d7c3919a1e5c32108",
+      "bytes": 1525
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/radial_measurements_quarter.csv",
+      "sha256": "4fb0bc4ef6f5fe45ff92ce421d3339044cb9e00aada54b0a1b287577d200c1a8",
+      "bytes": 952
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/339/summary.csv",
+      "sha256": "dcc1721f0780e7bd8d6ec54a0b9e07675ca6b76ebe089eaf9e464adc2b566349",
+      "bytes": 862
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/axial_signals.csv",
+      "sha256": "055871484d7d47200be4e695a8eb48656a9d6399d553ca281f9500ecf2a7c389",
+      "bytes": 123367
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/radial_measurements_all.csv",
+      "sha256": "47030191ca0a98c9fbf72005af68906d5fa26698946929f2d461862fa88a046e",
+      "bytes": 11715
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/radial_measurements_full_tc.csv",
+      "sha256": "b7348279aa06063864468dbf95f1253fd1aa9fb495e6afe1bd24899a1bec9bbd",
+      "bytes": 3052
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/radial_measurements_full.csv",
+      "sha256": "dc107bdebbbc8b3b567aa84217884958676cd0c6d10431e2eab64f8163a7638c",
+      "bytes": 1409
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/radial_measurements_quarter.csv",
+      "sha256": "a757b577483276703bb15328a6383908a5ba21d3e13cafa9e1a76206cd2d6771",
+      "bytes": 909
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/368/summary.csv",
+      "sha256": "551a9ea14e7452de2cf5df7f0ff500b887530eb1acd445a3179c72282eb495a6",
+      "bytes": 944
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/axial_signals.csv",
+      "sha256": "8acc6588911e0459391e1a3643e09bb9344701900acc3ff3169772cbf0e6b316",
+      "bytes": 128472
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/radial_measurements_all.csv",
+      "sha256": "7ffbe9ed43ce48f0db665f88b1e656be5d8941747db14f4977363ef89d8537a4",
+      "bytes": 11964
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/radial_measurements_full_tc.csv",
+      "sha256": "dbdf25e45a1f44ea8dfb50cd385d9de781edc3ba4587a1148015a5ac9580d7d2",
+      "bytes": 3114
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/radial_measurements_full.csv",
+      "sha256": "55b72bcf363adb9096771f0d66de04d6628b39298a0cec2ce136c5b0ec86a481",
+      "bytes": 1462
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/radial_measurements_quarter.csv",
+      "sha256": "1f83c3fae6ce3edc49981b6a029f240d02b133cb658b4f1eb6e79a428122050a",
+      "bytes": 927
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/403/summary.csv",
+      "sha256": "d9503c7122b9d4731352110981f24843d3d77224b137f312c5fee7e4d84367e6",
+      "bytes": 822
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/axial_signals.csv",
+      "sha256": "2f64a6a260e442fe4575fd95e812cca7d9762c00423189811d39745795cde8ac",
+      "bytes": 149372
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/radial_measurements_all.csv",
+      "sha256": "1dfc70f688a1e30309997097d2cd1ab319525d802fcad7a7f0fc3c77d73fa226",
+      "bytes": 12834
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/radial_measurements_full_tc.csv",
+      "sha256": "08e12f5aab7678fab3da46a4ea6708b8852c3f85113dae98a2d71bd85369af7c",
+      "bytes": 3266
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/radial_measurements_full.csv",
+      "sha256": "f934f1d20d5d99951fcdc6389bf6b1cc85f786b0e9a7ceca10d7891b5ba180aa",
+      "bytes": 1648
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/radial_measurements_quarter.csv",
+      "sha256": "cf6b2e440ccf7c62e43f463ef05dcb75cbddd25ec24be2cb3e3f85bd70197ad0",
+      "bytes": 1026
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/434/summary.csv",
+      "sha256": "915f54728b15292183219d5dc9d73366998653b7455c4c086c34c88d3bc43f09",
+      "bytes": 880
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/axial_signals.csv",
+      "sha256": "8a0e4847fd6c5f274e94fbe3b655d5e3792a4be95a10a1b2d678ab58e67cbc2b",
+      "bytes": 123412
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/radial_measurements_all.csv",
+      "sha256": "306a39743669445f808ca1dabe77492c2af9d0e3fe99f7e69402fb00eed4c518",
+      "bytes": 12126
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/radial_measurements_full_tc.csv",
+      "sha256": "ac632f03d08a8a918c55374df1a12a9b349bb31970b77a1c105e7429e9199290",
+      "bytes": 3173
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/radial_measurements_full.csv",
+      "sha256": "d9f0a0f9d2c0d1735e9dffd042b80d7af4aeee5d0ea0437623aa2642637d3622",
+      "bytes": 1438
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/radial_measurements_quarter.csv",
+      "sha256": "fc0e733006f18412e6fb3d28f5c1e0845922add2c96a9588a02b809b595fe0fc",
+      "bytes": 910
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/468/summary.csv",
+      "sha256": "90e09dcc156c2087d7073c5f26c11ca9a5faf51ceb5b66fb44500e28480f6051",
+      "bytes": 809
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/axial_signals.csv",
+      "sha256": "3d6796d5626143212497569434f984082c8efd8fa12c429be70c24dcf0379e40",
+      "bytes": 126033
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/radial_measurements_all.csv",
+      "sha256": "bd53f3c93506145dafc0882ea4d63bbe4a29e79a9ff4cd8aa955356803cb78f0",
+      "bytes": 11490
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/radial_measurements_full_tc.csv",
+      "sha256": "acf9c34ccb524889fefdfb2e152e257d53b1f06a6efa16bae90577e9e9542419",
+      "bytes": 2970
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/radial_measurements_full.csv",
+      "sha256": "98915dc32314223db90d14a0dae92815c70ede2425bd5e44ae4928615008e58a",
+      "bytes": 1423
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/radial_measurements_quarter.csv",
+      "sha256": "890667955db1a87fcdb33af0d94b4b6f9df2532324d74159cc5ecc0dc695ad9f",
+      "bytes": 912
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/504/summary.csv",
+      "sha256": "db21d82be49cc131c51ff60b22f88139b37e6ca7efd046b3b05234a85a8c0eca",
+      "bytes": 1179
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/axial_signals.csv",
+      "sha256": "829976aa2d8de4afa65fe5abbb09f73e59ba38882e27880c9603de6bb689107f",
+      "bytes": 125847
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/radial_measurements_all.csv",
+      "sha256": "3b75ee348eb6ad706574e9d6bebd0dd41d7483ab4d0a370a58a83d14a0be6913",
+      "bytes": 12157
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/radial_measurements_full_tc.csv",
+      "sha256": "63a215471a95e1ee6a570303f6ca84599ab11f8a38b770ce141d0caeac08d7d7",
+      "bytes": 3233
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/radial_measurements_full.csv",
+      "sha256": "34c8b4678bed7d440a4badaecbc8d8382fddf71115fda1d2981112dd7f3745ec",
+      "bytes": 1461
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/radial_measurements_quarter.csv",
+      "sha256": "0d2dff9ba6a139281bfc05f39bb6ba948dcd0eb4033931845d14c9f3c94087c0",
+      "bytes": 917
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/54/summary.csv",
+      "sha256": "86bde0a380075d8c568e6ea4ddd2a511398b4d62b14d116b42c85114033e5764",
+      "bytes": 901
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/axial_signals.csv",
+      "sha256": "9b27a6220c85cc7f7171c45db209ab334f0b39fcc06edd3f8dd0c52c8809bb73",
+      "bytes": 133696
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/radial_measurements_all.csv",
+      "sha256": "2aecc0a86595df3d9c4a2e5f130ffbcdb82d51c3cb2d4a4e4b163e42d4f3288e",
+      "bytes": 11872
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/radial_measurements_full_tc.csv",
+      "sha256": "699cb9daa013a64e608520d8496edbf12587b82fc56f5ace50ef9746b4fc495c",
+      "bytes": 3060
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/radial_measurements_full.csv",
+      "sha256": "d85404919a61fae657beb40cff7a02bc0d049b10781fa42ded060bbcd22de41e",
+      "bytes": 1497
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/radial_measurements_quarter.csv",
+      "sha256": "4ca9e3463dd622aaa18e2fcb0b00db91fff31ee222bc5b3111380fb7ffc77f1f",
+      "bytes": 955
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/551/summary.csv",
+      "sha256": "31a9ad97c0ce0ad9510b9eae6e2f2407e54ca1f1884ac7b7c92a38dd76aca7cb",
+      "bytes": 990
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/axial_signals.csv",
+      "sha256": "582e1f394de056211f7d066fdb64e58fe7e2d150a540aab5d27b870c00a1e817",
+      "bytes": 133712
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/radial_measurements_all.csv",
+      "sha256": "f9c5cc7cf9f2b1adf5500fa0ed87cc31bbd134e29348449fc029dbc2be6615cf",
+      "bytes": 12081
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/radial_measurements_full_tc.csv",
+      "sha256": "dc319ce8c5ac94e71764b2a1aeb447b0eb1c8e328095cc60a77677d055612bd3",
+      "bytes": 3132
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/radial_measurements_full.csv",
+      "sha256": "91f540ab5e835a2b5b19f7078a1349c7f04081d189bd40ff57403eb4a28357a8",
+      "bytes": 1507
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/radial_measurements_quarter.csv",
+      "sha256": "4022c8fd0496165f66fe2297d8cb82e93d06f660518e325b58098cb24221e450",
+      "bytes": 1005
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/573/summary.csv",
+      "sha256": "9f63970e03e64210699cd2835cf608a40076b274b8ba2d29d357490f22332a7a",
+      "bytes": 989
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/axial_signals.csv",
+      "sha256": "bcd8f51934ef402fb933fd4a678cdccc9576ffcd47d9f8139c317a06286e0071",
+      "bytes": 125803
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/radial_measurements_all.csv",
+      "sha256": "46550414e2c48af27b6593d01c2abe46bdcaec68227be68b803de750831b503a",
+      "bytes": 11634
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/radial_measurements_full_tc.csv",
+      "sha256": "14ab5a5e3272408e35ba0af0fd742b23cdd41abd7c04e754357956a19ebb6745",
+      "bytes": 3056
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/radial_measurements_full.csv",
+      "sha256": "b0c704cb90acfcf37e131cff20ca20f180f09016c843a16503e3e1c58514b82b",
+      "bytes": 1427
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/radial_measurements_quarter.csv",
+      "sha256": "a73cfb65913bd117fc51b0027b641e3778ac861abcede85bb87a07e343cfab17",
+      "bytes": 934
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/62/summary.csv",
+      "sha256": "0f9ff984af75a097caff2fe7418bb7c1877b51e7eb48445c6ebc11e42bb00cf0",
+      "bytes": 1064
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/axial_signals.csv",
+      "sha256": "3ed834c873cb6ca37c045872f4bfdab4e3723dd71ef544bf563136b1b172d5cf",
+      "bytes": 138890
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/radial_measurements_all.csv",
+      "sha256": "caee0628e7e8526f9f42ed1ea43149ddc71c4b5eaed30492678a7f874063ef72",
+      "bytes": 12112
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/radial_measurements_full_tc.csv",
+      "sha256": "2a52f6ca16e36ad9031a20705791b70d629f491282ffdee2457b17f1f70cf34b",
+      "bytes": 3142
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/radial_measurements_full.csv",
+      "sha256": "c5c8d700a5f7d1b17fe2600441654b02544d6ed0a49a213948f8872aafb255cf",
+      "bytes": 1505
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/radial_measurements_quarter.csv",
+      "sha256": "a1e96848ea1cc5af33868ead7217429c2f61717fd153ec6f5f192523fe24a24c",
+      "bytes": 963
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/66/summary.csv",
+      "sha256": "81e142402786275404c7007866b94cafd73437a5cb788b7c187fdddee21a9155",
+      "bytes": 1370
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/axial_signals.csv",
+      "sha256": "d02aa67393d7c61965cdfa3871882a2b6305acf6d5d20e3f9ce6bbafaedfae60",
+      "bytes": 149467
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/radial_measurements_all.csv",
+      "sha256": "bfd3cdf8945d00b5bbbf8c05c958e36868ed02e99aab29dbe74c424afdb41631",
+      "bytes": 6058
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/radial_measurements_full_tc.csv",
+      "sha256": "787d96fc65d738acd58ebddd82324eb9056e5a9bab5209aeb27c68d26e587914",
+      "bytes": 3334
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/radial_measurements_full.csv",
+      "sha256": "962244f5864f3bd488ba982ee11f13094348492b5e8eb2c4a80eb95e8c37a260",
+      "bytes": 1661
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/radial_measurements_quarter.csv",
+      "sha256": "8ed9ea73a26f26e7602f47df1c67e06a9691ca17b46892ab7e276ba7d16f5af0",
+      "bytes": 1039
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/7/summary.csv",
+      "sha256": "44830ec68d0b9d97411a0c0ac2f9f9b904d6cc325f89f3c3ec929a91b83e82b9",
+      "bytes": 900
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/axial_signals.csv",
+      "sha256": "d916f5bbd079d206d88398cce66df6e7f2e5d90df5fc32bce3b3f18a7f6c2346",
+      "bytes": 151811
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/radial_measurements_all.csv",
+      "sha256": "419c4b1e08ef95189abb47bb3ec9efaca6471f2a4b45cfb5e7733bb854175c8d",
+      "bytes": 12922
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/radial_measurements_full_tc.csv",
+      "sha256": "d5cd834662947d78748851efe1621709f7f13e785a2b7e0d6ed5c58e5789b295",
+      "bytes": 3290
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/radial_measurements_full.csv",
+      "sha256": "b34bf2eefaf42ce030e88b61cc906cef82880793c8de9027f8e3d7bc748139e4",
+      "bytes": 1666
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/radial_measurements_quarter.csv",
+      "sha256": "778caae74912f9104d4c7cd0ddfb86734909d60f85d4f67d1ee6e407daa166bd",
+      "bytes": 1032
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/81/summary.csv",
+      "sha256": "6068eed3c09097daedb0244be618c1a223171fcc9678b441cfcc0bd6cfec2429",
+      "bytes": 889
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/axial_signals.csv",
+      "sha256": "d0774eeefae4f39fc95a4c2aad4c97a3850495ad324e666904984b9463d93b0b",
+      "bytes": 151833
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/radial_measurements_all.csv",
+      "sha256": "9d2c656c4df19f4d85777293e65b28dc3a8097775a7748443b8dc7ed33310e0b",
+      "bytes": 12926
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/radial_measurements_full_tc.csv",
+      "sha256": "737e2525c4f8be404f63c3fc7b203526e2cfa2fac2701a197a282eb68de9309d",
+      "bytes": 3306
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/radial_measurements_full.csv",
+      "sha256": "43c1d263c60168d672c0e95611d47a66bebd06979094dc035a11c469ee323121",
+      "bytes": 1672
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/radial_measurements_quarter.csv",
+      "sha256": "f6fc540c89a2213c5bc5b37b4c714b078053dc2d6e1932f3dcecbbbdd060259b",
+      "bytes": 1029
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/82/summary.csv",
+      "sha256": "0a6648111eac835b52771968fbc9c40023d990542b27138041567512d3f783f8",
+      "bytes": 889
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/axial_signals.csv",
+      "sha256": "9c3ea5facb20250a4cf84c76f52d89cfadd5a180bff0ffc051bd4e1e58c208b2",
+      "bytes": 151884
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/radial_measurements_all.csv",
+      "sha256": "300779946abe91f439df94f8e9a2156bf03add21ab08b4da1e2c0c86c023d357",
+      "bytes": 12870
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/radial_measurements_full_tc.csv",
+      "sha256": "7d394acc6ca164e5ad3548e570e201005e82a6bf66dd4de7a05ec86591374dc1",
+      "bytes": 3286
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/radial_measurements_full.csv",
+      "sha256": "df1a7602eae5886ff854204fd307d76961fae82fd0129c2a1e85c984a44fce51",
+      "bytes": 1671
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/radial_measurements_quarter.csv",
+      "sha256": "bc78585f7b3607725f553e85cf627dae7ea4c0d86035c1bf7fa0825a4773ee63",
+      "bytes": 1033
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/88/summary.csv",
+      "sha256": "92337395f6a7e97b7215c791ee9f0f76b715e4db124b7dc2b15102c66d0005e1",
+      "bytes": 876
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/axial_signals.csv",
+      "sha256": "cf7cc1896ab7ad6fe51e698a32fdc0f42264a8d4142e9461872d679dcd87f9b4",
+      "bytes": 151924
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/radial_measurements_all.csv",
+      "sha256": "519b02fc68c1b7f766d1b1878d7384859df4561bd2d438d1cc57f69d1f704ecb",
+      "bytes": 12856
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/radial_measurements_full_tc.csv",
+      "sha256": "8ac594abc746ed4bdf5079f6e5a2c25c7e532fa7275dc971558875f1962af6c3",
+      "bytes": 3306
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/radial_measurements_full.csv",
+      "sha256": "5334a7323933de9940a2cc902268b37d36f4dbf54ca26fd314485c17f086f741",
+      "bytes": 1670
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/radial_measurements_quarter.csv",
+      "sha256": "a4f1e9c53ce5860079dad9bc3a96fc5876174a541e3f1c5061cab46216979911",
+      "bytes": 1031
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_1/92/summary.csv",
+      "sha256": "7f711ee5981356dda18abe8891167cdeaeb1db5023fcfe97b5a5ed31af74c557",
+      "bytes": 902
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/axial_signals.csv",
+      "sha256": "dd6d1b42004f0183d90e3e82f3538edbb25e8338ac12230f89d08c3830400a7b",
+      "bytes": 138972
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/radial_measurements_all.csv",
+      "sha256": "815c1842bb910c5f69f4edc3b4197e4c9cde47c15f24653f3f0a4bd786f19735",
+      "bytes": 12571
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/radial_measurements_full_tc.csv",
+      "sha256": "5976d9edb68418b166e46c6f6f9f564e493a319350149f4d37d1e6f439259f91",
+      "bytes": 3282
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/radial_measurements_full.csv",
+      "sha256": "d44dfec513e91c65676aba9e17562fcdfd236b383933696b045a75893ca27f0f",
+      "bytes": 1565
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/radial_measurements_quarter.csv",
+      "sha256": "6798196125a21f87dadbb497a40aaf9bfee01aba1af76a4185e9c95575aaba49",
+      "bytes": 930
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/10/summary.csv",
+      "sha256": "ef7a802a88c56162865d9e97317a3256a425d48f41d9fe4d33e522f7f26dd85b",
+      "bytes": 818
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/axial_signals.csv",
+      "sha256": "abec27d4d331f7fb5706033fe59158df32451ecba65a43c8ec0bdda0ac46f1d4",
+      "bytes": 131238
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/radial_measurements_all.csv",
+      "sha256": "a70a6530da076654f30250c0b7f60328eeffa1edb8e51f7dd661f8919248d07c",
+      "bytes": 12001
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/radial_measurements_full_tc.csv",
+      "sha256": "61ec4762545b6a5e04f74cb719de440aeefc22d077d9fd89b9d11ee6ade6458d",
+      "bytes": 3128
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/radial_measurements_full.csv",
+      "sha256": "a30fbcc3496a048bfb7a9c4df582066510dc1a97b03c234cb95bc3f1a240f537",
+      "bytes": 1479
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/radial_measurements_quarter.csv",
+      "sha256": "f84e783ba95ced906c7e1b9917a28ead069375f270215505d882b9fe0fe2bb2a",
+      "bytes": 931
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/126/summary.csv",
+      "sha256": "0efe422d885d53762aef2d3f0ee6138a462d19f34ecf2f0914d39e0ad5303458",
+      "bytes": 891
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/axial_signals.csv",
+      "sha256": "3e9e58f90bbcc3fbfd1821532a611d7e796e62dcf8d51b953c03d930fddf155f",
+      "bytes": 144168
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/radial_measurements_all.csv",
+      "sha256": "4dd6e127ede75edc07c253c2aa8ecf111cf7ea95bde43f42dab02f8f2806049c",
+      "bytes": 12678
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/radial_measurements_full_tc.csv",
+      "sha256": "e4dbae4330729015e78bfe524cf87b5e6b9cdf560bd63d04f7ebe301e123da3d",
+      "bytes": 3270
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/radial_measurements_full.csv",
+      "sha256": "01f64aae766734f1d5fb14995ceaff1906ed624183ddd32dedc84081d5139a18",
+      "bytes": 1604
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/radial_measurements_quarter.csv",
+      "sha256": "e229cf82f409ab124f24ac200556526f20a36d5e877962d3b14cdff075432797",
+      "bytes": 970
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/13/summary.csv",
+      "sha256": "fb8b4777db592d14bcbf7fa8ebbe6b1de7da765920b852d0513e1fbd5d2833db",
+      "bytes": 807
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/axial_signals.csv",
+      "sha256": "706b8e1d22d9362c96f50f3553a3cf5b3e74a1e1620bc344da6288eed0a0e9f7",
+      "bytes": 138999
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/radial_measurements_all.csv",
+      "sha256": "5a5d75ce0c0a7c598e2a2465e7ea6ba51cf0fc8cc18ba098ef165c1d7935f386",
+      "bytes": 12162
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/radial_measurements_full_tc.csv",
+      "sha256": "9173689294c7e35721907dc70325307cf553a6c33d32f62e4467757cdf615adf",
+      "bytes": 3124
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/radial_measurements_full.csv",
+      "sha256": "4ded6dea496cec183d6f23a4d76f7e1b6cbb8a98073ed1d3f07c947dd1323405",
+      "bytes": 1535
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/radial_measurements_quarter.csv",
+      "sha256": "6d61793c06a18636a3cc0e324cfa667df9fdc32a493c1231a39fa4e4aef527dd",
+      "bytes": 953
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/156/summary.csv",
+      "sha256": "d96aecf861ef78094bfa0ea44538baf7d62d3a08b0f21425bc00536909f65f0a",
+      "bytes": 890
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/axial_signals.csv",
+      "sha256": "dc8fced074e2b39802174ea5cd26b003b8e04603d7ec60792687696e5976a83c",
+      "bytes": 144214
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/radial_measurements_all.csv",
+      "sha256": "f7597adbeef645a84fce3a56f606bcdde53fd9b1be9032ebd72c637bc44e91ef",
+      "bytes": 12673
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/radial_measurements_full_tc.csv",
+      "sha256": "134fef878029a9944a4c2d9c7bb09dff53ea2ce52e95dc647ae8c1532d5feaf8",
+      "bytes": 3282
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/radial_measurements_full.csv",
+      "sha256": "89f66b1bc9885ac795c278479e350fef0d60139b0d8ba7af6b99a5141c61269e",
+      "bytes": 1593
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/radial_measurements_quarter.csv",
+      "sha256": "5b84f4dfc6827b93958e13b0a22d8c57387270b9f937adc64b01494f23fd8e70",
+      "bytes": 974
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/191/summary.csv",
+      "sha256": "013bbd075f509ef07733c6207ad072ee89aa78aee439308b623fd967f9e3a13c",
+      "bytes": 931
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/axial_signals.csv",
+      "sha256": "64303c349d620be1900399f88880c9f14d21025fa6b718252abbf581811758bb",
+      "bytes": 138927
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/radial_measurements_all.csv",
+      "sha256": "ad3b6d9d78bc67b8ab07dcf4ee63c9204de4c542ea8e11602331f1bd10e8609e",
+      "bytes": 12553
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/radial_measurements_full_tc.csv",
+      "sha256": "705175e8d55d03c5baea126030bf95ec511a2d73fe504026ccef36152dce75ab",
+      "bytes": 3230
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/radial_measurements_full.csv",
+      "sha256": "408874a23e1301f4ece8e183ad87b5fad107fc17d5049714a45dbb6337f284e8",
+      "bytes": 1559
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/radial_measurements_quarter.csv",
+      "sha256": "df33e1a53e6304d3822eda0d346b710e91c1a8b4a01f587860d51e2007f6cd18",
+      "bytes": 981
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/220/summary.csv",
+      "sha256": "959813e56104e8ac99f85393e2b7b9eff3345b5b41e29b388cfb74725b6825e9",
+      "bytes": 920
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/axial_signals.csv",
+      "sha256": "b4b2ccc67143a335e9ad2ebcadbe5d778d940f6bd5564ddccbf4183ce982acba",
+      "bytes": 144213
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/radial_measurements_all.csv",
+      "sha256": "7e1c45049a034b7078aa156e1c6b354facdfc5ee4d2fe98a84e9537e50f9c7e4",
+      "bytes": 12697
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/radial_measurements_full_tc.csv",
+      "sha256": "68a75fffde2a68788d3e841908ca53853b0008a81d2ec80eba42595ad4f57acf",
+      "bytes": 3262
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/radial_measurements_full.csv",
+      "sha256": "ad608d7ce394b03d052a3fec6162e850413830a8318c250af271cbed29d0108c",
+      "bytes": 1605
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/radial_measurements_quarter.csv",
+      "sha256": "5785a618d3eef340cc74871a88bacce39334f758112b9369142565a926295fd4",
+      "bytes": 977
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/251/summary.csv",
+      "sha256": "8026d018bb9d2ee1c5671616cb54956ae194d3c3e81ca2863458d1c6606cf56a",
+      "bytes": 931
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/axial_signals.csv",
+      "sha256": "5d72620f96d588c7944ebbcf58539cc31d625c67d1207c5c4dc130f6c4a32cb8",
+      "bytes": 144153
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/radial_measurements_all.csv",
+      "sha256": "7dfe15d2cd0b91942bf96b5771412698cebc6f08e2fb44c565560d8e7f7a0d2b",
+      "bytes": 12671
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/radial_measurements_full_tc.csv",
+      "sha256": "3af1a163b863cfbc1389eae58cce17d50b23b6059c8525f77de4842e36f40459",
+      "bytes": 3266
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/radial_measurements_full.csv",
+      "sha256": "076e299ff2a3e3265ba04665b98bfea8a13ba26f2fe65c80d358af14ac5c351c",
+      "bytes": 1595
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/radial_measurements_quarter.csv",
+      "sha256": "e295b834c1f6132af6cd9edcb25f644d8667833a8b49a6f782cb1d50bd8e6e7a",
+      "bytes": 979
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/266/summary.csv",
+      "sha256": "1cc0a5a3c44d23a86f6587f82bc4557a05069a8bdcea6e5b33aa946b9f93cce5",
+      "bytes": 921
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/axial_signals.csv",
+      "sha256": "4f5a8f760f9703f26d40c1c56a0ad607a2115f16d6be8ef0ebe95d865ddba313",
+      "bytes": 141573
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/radial_measurements_all.csv",
+      "sha256": "6748c825e30a5abc9f21edad8a3519c915304c15da7ce478763a09a97ba6b538",
+      "bytes": 12201
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/radial_measurements_full_tc.csv",
+      "sha256": "af1cf4c3b089f7d94242774796c6103b8069fcefd070b9a26958bd76c4a529c4",
+      "bytes": 3124
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/radial_measurements_full.csv",
+      "sha256": "c30c5d625a3deba9cbd6db5d3b81151932273501b90795c68d22be9f81972655",
+      "bytes": 1559
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/radial_measurements_quarter.csv",
+      "sha256": "0214edc3f8d5965a3a31d3441b195291380a2f8b11056cfbb52fdcfc976e39a5",
+      "bytes": 950
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/296/summary.csv",
+      "sha256": "5e5f1a4570af8c8a22056f5fc95d9947a643c41ae3467ea41b164740b55a6395",
+      "bytes": 935
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/axial_signals.csv",
+      "sha256": "8602a83db8ea0a4262bf4fca977ad0d36ead2887ada73036a5e4b3d6321f7551",
+      "bytes": 120899
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/radial_measurements_all.csv",
+      "sha256": "8e49a082fdfbbb3291a703c7d6511fd3ce61d0149ac98fa679c06e7033259ed0",
+      "bytes": 11570
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/radial_measurements_full_tc.csv",
+      "sha256": "d5dc4f6cad612630d947b5a50bf67e7185aa6af805a09bd69545170cce7ad0fa",
+      "bytes": 3059
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/radial_measurements_full.csv",
+      "sha256": "fe309a3b5d360bf1cd8f2337cd9317ce15b264d43f745f1f9d4919f0459d29e2",
+      "bytes": 1386
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/radial_measurements_quarter.csv",
+      "sha256": "bb12d4f9daff2f8e9f39b5963a7547b33c3bfa3ccb10b86448b84a9ad513b70f",
+      "bytes": 856
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/35/summary.csv",
+      "sha256": "2419c98d5d376aa2a0df91cbca16e79fd6d01a398af0ede9a511fdd8644dfd85",
+      "bytes": 808
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/axial_signals.csv",
+      "sha256": "37a5a760cb80455ac3b5cd977345e07c8a7aba1a246be750a9460f24521f2d00",
+      "bytes": 120910
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/radial_measurements_all.csv",
+      "sha256": "b4f52e8cc79f9dc3253fac638ee4e317554e008f27ce0ad3897c56d8d9cba007",
+      "bytes": 11549
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/radial_measurements_full_tc.csv",
+      "sha256": "5ed97405c22556331ba9db9caf63c5fe507fd8daf52b9e8b9f1b22a641d55a16",
+      "bytes": 3043
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/radial_measurements_full.csv",
+      "sha256": "941c2dadd261ec12183321afcc360096dc16f3a774dc4b79c66d500e69553a55",
+      "bytes": 1394
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/radial_measurements_quarter.csv",
+      "sha256": "685a351fb01c59c38d3eed0604ebc9fe367d7eb0b14b2e906973fc1d4c9f1444",
+      "bytes": 859
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/42/summary.csv",
+      "sha256": "61e3ba15706cec6d5547c45779c0a71f757de668ce6dd9d8e3e747e524153652",
+      "bytes": 848
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/axial_signals.csv",
+      "sha256": "fe72860c2d9ab8e4da585c560476ba538bb652ebc999859e4b16c51d3d3261de",
+      "bytes": 143844
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/radial_measurements_all.csv",
+      "sha256": "ac07d91fcf68ad0dc4ac5448ec19774754b2a7f71b02811a59a6b610ceaa5f3c",
+      "bytes": 12707
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/radial_measurements_full_tc.csv",
+      "sha256": "3cfed6b7e944a6fd54d7901a02648f64321095dce3affd6746edb1220fafe1e5",
+      "bytes": 3274
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/radial_measurements_full.csv",
+      "sha256": "0eda7bb833fd469ed2147afa1d101cb26aec882199163e7245e321fb8afd0226",
+      "bytes": 1600
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/radial_measurements_quarter.csv",
+      "sha256": "42819486c331c2a102d33bbc01499395a8c11a8d190732014c1fdc040f12c243",
+      "bytes": 965
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/5/summary.csv",
+      "sha256": "12cab0357f87de498e6167744562c0cff568fbd34f7b539945063c909ef35e7a",
+      "bytes": 932
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/axial_signals.csv",
+      "sha256": "378a82f11fc61ef1020f1bbb850d7d0f0b0fcd57da93268979c0450c7a2dc3b7",
+      "bytes": 123517
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/radial_measurements_all.csv",
+      "sha256": "62c8a48b066232722b7f22d91bb455ff6d07264fd6e9bc443d04d3852fe2143b",
+      "bytes": 11621
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/radial_measurements_full_tc.csv",
+      "sha256": "a7ecdfbc5bd6387922d27e588489f9e86e505ee3fbc865ed370063208882de6e",
+      "bytes": 3039
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/radial_measurements_full.csv",
+      "sha256": "0380bf6500df2d57927c0a97ff39d5ad20b80501bc599a866593744a9e41c261",
+      "bytes": 1410
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/radial_measurements_quarter.csv",
+      "sha256": "8ea077a502594e643be46a5a05dcd65c74e4833a08dcb4c2d7c14a88c7170674",
+      "bytes": 861
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/65/summary.csv",
+      "sha256": "3a3b1eb9b7bff28b429037ad2d5649080c4fb44abdca0f87d0b81b476e7e793e",
+      "bytes": 972
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/axial_signals.csv",
+      "sha256": "5a9926e502c3a0b20cbdf030ae31b49bfdc69a9fbd2ff535eff657e9e3c5d878",
+      "bytes": 120807
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/radial_measurements_all.csv",
+      "sha256": "23d17cffe0cec185442b392c1d6e218ad5acd780acbaf8bfd7b39c8dd48e13e6",
+      "bytes": 11406
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/radial_measurements_full_tc.csv",
+      "sha256": "9e9f285d0605ad721f74be0155393ebf23c4fec675f87db75b162afb5f835352",
+      "bytes": 2966
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/radial_measurements_full.csv",
+      "sha256": "a55882756fc9fe8d7dc815df53f0dd4340e082f97e09e965ece10d2a20f5f845",
+      "bytes": 1379
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/radial_measurements_quarter.csv",
+      "sha256": "355dc4767f9fe9b1e045e540388c189dc60a18fe5eb2e050f207dc7d9105c780",
+      "bytes": 859
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/cycle_2/93/summary.csv",
+      "sha256": "a5f390a5987e985d9c9e5efd845d075d996634c129084c136f8dd8a168a3e2f3",
+      "bytes": 920
+    },
+    {
+      "path": "research/beavrs/source/measurements/detector_signals/README",
+      "sha256": "cd23ff42d30041214fb897446e42d9c9f5e70b2ca3541a2ac47d566a026218cc",
+      "bytes": 1464
+    },
+    {
+      "path": "research/beavrs/source/measurements/power_history/power_history.csv",
+      "sha256": "deaad0dfe3184fba1765b316cfd560eb9540ae0c4240130e196c1a1d34865179",
+      "bytes": 13095
+    },
+    {
+      "path": "research/beavrs/source/measurements/power_history/README",
+      "sha256": "6b717d22bc8256b627832554f6cd8fe2f959bc1b8368efeec72a1fa735006065",
+      "bytes": 266
+    },
+    {
+      "path": "research/beavrs/source/measurements/README",
+      "sha256": "a8cdfd91ed06ae5adc4b5db5ac46a973bb6d8fed254bdb19707649412f6871f8",
+      "bytes": 514
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/assemblies.py",
+      "sha256": "b02db838c889ff579660e0c5a511915f579d9803aa4b9b61fe68e75922f226ee",
+      "bytes": 13738
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/baffle.py",
+      "sha256": "957b8cf52fcace4ebb916f13acaa8ec503fa7b368d4de61715a82461d9a98617",
+      "bytes": 8448
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/builder.py",
+      "sha256": "76202c5f8c57383f639ac0b114ff16832c74bb15aab2c59b9ee706499b0c1617",
+      "bytes": 13427
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/constants.py",
+      "sha256": "7533c55645752a104cb2741d8d07a9964c5c8864f202a117b28d19f7e27c291d",
+      "bytes": 7366
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/core.py",
+      "sha256": "1ece156d369828a0bc6cb65f8d3d131d23b46a904b5f0d73c0c8bd23b3e64554",
+      "bytes": 19812
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/corebuilder.py",
+      "sha256": "5c1cba8cb115c6dd9072f9aa50095334d815cda85ccb5e33f2a77b27d2f2942d",
+      "bytes": 11853
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/materials.py",
+      "sha256": "4147a35087597dff6c8b0f755afce60a08851a87832cdd91476770a65a143983",
+      "bytes": 8351
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/pincells.py",
+      "sha256": "918431c653980d7c831006cf8188523ef1665c618ad3870a26cde5495c233880",
+      "bytes": 24227
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/plots.py",
+      "sha256": "504a614ae4e57ef966602f2a0afafd9680a97854c52e048e6579472f5cc2d4fb",
+      "bytes": 8052
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/beavrs/univzero.py",
+      "sha256": "5e207bba3c637b100e04afbe6a27eb7fedfbc573adbe92fa17ffa9a3aa9ad1a1",
+      "bytes": 8910
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/make_beavrs.py",
+      "sha256": "ae482affb2da1c9b591acd9a081c8adefc85801e76c6958bc5adb46899d8205e",
+      "bytes": 2778
+    },
+    {
+      "path": "research/beavrs/source/models/openmc/setup.py",
+      "sha256": "2b68731fd82901348a9e2601a71c5b8244e8205172c2c29a6258616c4161dc64",
+      "bytes": 339
+    },
+    {
+      "path": "research/beavrs/source/models/README",
+      "sha256": "1edb5c7b38d8b5f7d2f30f85ec78227955402547f3ed938c116d9238ac93de85",
+      "bytes": 92
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "dbcb73a66108afe4927706e2028e3e1d14a4e1a600892839ccd3dcab0cfaebdc",
+      "bytes": 1813
+    },
+    {
+      "path": "tools/project_beavrs.py",
+      "sha256": "c8228e61c0fd531c4d29029a75b9f39d16b49de643d3971f61f580ae453e3672",
+      "bytes": 10718
+    }
+  ]
+}

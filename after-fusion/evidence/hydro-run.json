@@ -1,0 +1,26 @@
+{
+  "schema": "ife-radiating-hydro/1",
+  "solver": "Atlas spherical radiating-gas FV",
+  "version": "0.1",
+  "spatialCells": 640,
+  "model": "spherical Euler; ideal fully ionized Z=1 gas; mean ion mass 2.5 mp; Ti=Te; optically thin bremsstrahlung energy loss",
+  "boundary": "reflecting origin; zero-gradient outflow at 2 mm",
+  "initialCondition": "prescribed 0.22 mm hot cloud; rho 10 vs 0.02 kg/m3; T 6e6 vs 1e6 K; zero velocity. Illustrative post-pulse state, no simulated implosion or fusion rate.",
+  "initialEnergyJ": 25.709510836199478,
+  "energyResidualRelative": -2.7637349473006797e-16,
+  "massResidualRelative": 3.880161705593993e-16,
+  "steps": 2917,
+  "omissions": [
+    "laser drive",
+    "fusion burn and rates",
+    "alpha stopping",
+    "tabulated EOS",
+    "radiation absorption and pressure",
+    "electron conduction",
+    "3D instabilities"
+  ],
+  "radiationModel": "Optically thin escaping power: 1.69e-38 Z^2 ni ne sqrt(Te[eV]) W/m3; nonrelativistic, prescribed ionization.",
+  "coarseFineTemperatureRelativeL1": 0.08545892402847981,
+  "scope": "conservation and resolution checks, not experimental validation",
+  "radiatedJ": 0.030062899878353734
+}

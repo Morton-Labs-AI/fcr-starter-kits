@@ -1,0 +1,16 @@
+{
+  "name": "@morton-labs/fcr-after-fusion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT OR Apache-2.0",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "node check.mjs && tsc --noEmit",
+    "build": "npm run check && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": { "three": "0.185.1" },
+  "devDependencies": { "@types/three": "0.185.4", "typescript": "5.9.3", "vite": "8.2.2" }
+}

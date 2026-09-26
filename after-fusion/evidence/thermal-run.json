@@ -1,0 +1,24 @@
+{
+  "schema": "ife-thermal/1",
+  "solver": "Atlas spherical conduction + lumped coolant",
+  "version": "0.1",
+  "initialEnergyJPerSource": 2.2318369426819127e-12,
+  "temperatureNormalizationKPerSource": 1.1365629918310593e-20,
+  "coolantNormalizationKPerSource": 1.9543560470345446e-21,
+  "energyResidualRelative": -4.433778743352713e-14,
+  "assumptions": {
+    "ironConductivityWmK": 80,
+    "ironCpJkgK": 449,
+    "ironDensityKgM3": 7870,
+    "waterCpJkgK": 4182,
+    "waterDensityKgM3": 998,
+    "filmWm2K": 8000,
+    "exchangerUAWK": 5000000.0,
+    "boundary": "inner wall adiabatic; outer wall convection to well-mixed blanket; exchanger to fixed zero-perturbation reservoir",
+    "backgroundK": 293.6,
+    "source": "OpenMC integrated n+photon heating, instantaneous deposition relative to thermal times; one source neutron",
+    "flow": "well-mixed coolant, not CFD; film and UA are scenario assumptions"
+  },
+  "gridCheckRelativeL1": 0.0006125151700576781,
+  "sourceScalingCheck": "factor-of-two linearity passed"
+}

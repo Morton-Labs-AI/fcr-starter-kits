@@ -1,0 +1,305 @@
+from typing import Optional, Sequence, Tuple, Union
+
+import cadquery as cq
+from .assembly import Assembly
+
+from ..utils import (
+    get_plasma_index,
+    get_plasma_value,
+    get_layer_name,
+    get_assembly_names,
+    sum_up_to_gap_before_plasma,
+    sum_up_to_plasma,
+    sum_before_after_plasma,
+    validate_vertical_build_names,
+    validate_unique_assembly_names,
+    LayerType,
+)
+from ..workplanes.blanket_from_plasma import blanket_from_plasma
+from ..workplanes.center_column_shield_cylinder import center_column_shield_cylinder
+from ..workplanes.plasma_simplified import plasma_simplified
+
+
+def create_blanket_layers_after_plasma(
+    radial_build, vertical_build, minor_radius, major_radius, triangularity, elongation, rotation_angle, center_column, layer_count=0
+):
+    layers = []
+    cumulative_thickness_rb = 0
+    cumulative_thickness_uvb = 0
+    cumulative_thickness_lvb = 0
+
+    plasma_index_radial = get_plasma_index(radial_build)
+    plasma_index_vertical = get_plasma_index(vertical_build)
+
+    for i, item in enumerate(radial_build[plasma_index_radial + 1 :]):
+        upper_thickness = vertical_build[plasma_index_vertical + 1 + i][1]
+        lower_thickness = vertical_build[plasma_index_vertical - 1 - i][1]
+        radial_thickness = item[1]
+
+        if item[0] == LayerType.GAP:
+            cumulative_thickness_rb += radial_thickness
+            cumulative_thickness_uvb += upper_thickness
+            cumulative_thickness_lvb += lower_thickness
+            continue
+
+        layer_count += 1
+        layer_name = get_layer_name(item, layer_count)
+
+        layer = blanket_from_plasma(
+            minor_radius=minor_radius,
+            major_radius=major_radius,
+            triangularity=triangularity,
+            elongation=elongation,
+            thickness=[
+                lower_thickness,
+                radial_thickness,
+                upper_thickness,
+            ],
+            offset_from_plasma=[
+                cumulative_thickness_lvb,
+                cumulative_thickness_rb,
+                cumulative_thickness_uvb,
+            ],
+            start_angle=-90,
+            stop_angle=90,
+            rotation_angle=rotation_angle,
+            color=(0.5, 0.5, 0.5),
+            name=layer_name,
+            allow_overlapping_shape=True,
+            connect_to_center=True,
+        )
+        layer = layer.cut(center_column)
+        layer.name = layer_name
+        cumulative_thickness_rb += radial_thickness
+        cumulative_thickness_uvb += upper_thickness
+        cumulative_thickness_lvb += lower_thickness
+        layers.append(layer)
+
+    return layers
+
+
+def create_center_column_shield_cylinders(radial_build, vertical_build, rotation_angle):
+    cylinders = []
+    total_sum = 0
+    layer_count = 0
+
+    before, _ = sum_before_after_plasma(vertical_build)
+    center_column_shield_height = sum([item[1] for item in vertical_build])
+
+    for index, item in enumerate(radial_build):
+        if item[0] == LayerType.PLASMA:
+            break
+        if item[0] == LayerType.GAP and radial_build[index + 1][0] == LayerType.PLASMA:
+            break
+        if item[0] == LayerType.GAP:
+            total_sum += item[1]
+            continue
+        
+        layer_count += 1
+        layer_name = get_layer_name(item, layer_count)
+
+        cylinder = center_column_shield_cylinder(
+            inner_radius=total_sum,
+            thickness=item[1],
+            name=layer_name,
+            rotation_angle=rotation_angle,
+            height=center_column_shield_height,
+            reference_point=("lower", -before),
+        )
+        cylinders.append(cylinder)
+        total_sum += item[1]
+
+    return cylinders
+
+
+def spherical_tokamak_from_plasma(
+    radial_build: Sequence[Tuple[LayerType, float] | Tuple[LayerType, float, str]],
+    elongation: float = 2.0,
+    triangularity: float = 0.55,
+    rotation_angle: float = 180.0,
+    extra_cut_shapes: Sequence[cq.Workplane] = None,
+    extra_intersect_shapes: Sequence[cq.Workplane] = None,
+    colors: dict = None,
+) -> Assembly:
+    """Creates a spherical tokamak fusion reactor from a radial build and plasma parameters.
+
+    Args:
+        radial_build: sequence of tuples containing the radial build of the
+            reactor. Each tuple should contain a LayerType, a float and the string is optional.
+        elongation: The elongation of the plasma. Defaults to 2.0.
+        triangularity: The triangularity of the plasma. Defaults to 0.55.
+        rotation_angle: The rotation angle of the reactor in degrees. Defaults to 180.0.
+        extra_cut_shapes: A list of extra shapes to cut the reactor with. Defaults to [].
+        colors: the colors to assign to the assembly parts. Defaults to {}.
+            Each dictionary entry should be a key that matches the assembly part name
+            (e.g. 'plasma', or 'layer_1') and a tuple of 3 or 4 floats between 0 and 1
+            representing the RGB or RGBA values.
+
+    Returns:
+        CadQuery.Assembly: A CadQuery Assembly object representing the spherical tokamak fusion reactor.
+    """
+
+    if extra_cut_shapes is None:
+        extra_cut_shapes = []
+    if extra_intersect_shapes is None:
+        extra_intersect_shapes = []
+    if colors is None:
+        colors = {}
+
+    inner_equatorial_point = sum_up_to_plasma(radial_build)
+    plasma_radial_thickness = get_plasma_value(radial_build)
+    outer_equatorial_point = inner_equatorial_point + plasma_radial_thickness
+
+    # sets major radius and minor radius from equatorial_points to allow a
+    # radial build. This helps avoid the plasma overlapping the center
+    # column and other components
+    major_radius = (outer_equatorial_point + inner_equatorial_point) / 2
+    minor_radius = major_radius - inner_equatorial_point
+
+    # make vertical build from outer radial build
+    pi = get_plasma_index(radial_build)
+    # drop any layer names, they are only supported in radial_build not vertical_build
+    upper_vertical_build = [(item[0], item[1]) for item in radial_build[pi:]]
+
+    plasma_height = 2 * minor_radius * elongation
+    # slice operation reverses the list and removes the last value to avoid two plasmas
+    vertical_build = upper_vertical_build[::-1][:-1] + [(LayerType.PLASMA, plasma_height)] + upper_vertical_build[1:]
+
+    return spherical_tokamak(
+        radial_build=radial_build,
+        vertical_build=vertical_build,
+        triangularity=triangularity,
+        rotation_angle=rotation_angle,
+        extra_cut_shapes=extra_cut_shapes,
+        extra_intersect_shapes=extra_intersect_shapes,
+        colors=colors,
+    )
+
+
+def spherical_tokamak(
+    radial_build: Sequence[Tuple[LayerType, float] | Tuple[LayerType, float, str]],
+    vertical_build: Sequence[Tuple[LayerType, float] | Tuple[LayerType, float, str]],
+    triangularity: float = 0.55,
+    rotation_angle: float = 180.0,
+    extra_cut_shapes: Sequence[cq.Workplane] = None,
+    extra_intersect_shapes: Sequence[cq.Workplane] = None,
+    colors: dict = None,
+) -> Assembly:
+    """Creates a spherical tokamak fusion reactor from a radial build and vertical build.
+
+    Args:
+        radial_build: sequence of tuples containing the radial build of the
+            reactor. Each tuple should contain a LayerType, a float and the string is optional.
+        vertical_build: sequence of tuples containing the vertical build of the
+            reactor. Each tuple should contain a LayerType, a float and the string is optional.
+        triangularity: The triangularity of the plasma. Defaults to 0.55.
+        rotation_angle: The rotation angle of the reactor in degrees. Defaults to 180.0.
+        extra_cut_shapes: A list of extra shapes to cut the reactor with. Defaults to [].
+        extra_intersect_shapes: A list of extra shapes to intersect the reactor with. Defaults to [].
+        colors: the colors to assign to the assembly parts. Defaults to {}.
+            Each dictionary entry should be a key that matches the assembly part name
+            (e.g. 'plasma', or 'layer_1') and a tuple of 3 or 4 floats between 0 and 1
+            representing the RGB or RGBA values.
+
+    Returns:
+        CadQuery.Assembly: A CadQuery Assembly object representing the spherical tokamak fusion reactor.
+    """
+
+    if extra_cut_shapes is None:
+        extra_cut_shapes = []
+    if extra_intersect_shapes is None:
+        extra_intersect_shapes = []
+    if colors is None:
+        colors = {}
+
+    validate_vertical_build_names(vertical_build, "spherical_tokamak()")
+
+    inner_equatorial_point = sum_up_to_plasma(radial_build)
+    plasma_radial_thickness = get_plasma_value(radial_build)
+    plasma_vertical_thickness = get_plasma_value(vertical_build)
+    outer_equatorial_point = inner_equatorial_point + plasma_radial_thickness
+
+    # sets major radius and minor radius from equatorial_points to allow a
+    # radial build. This helps avoid the plasma overlapping the center
+    # column and other components
+    major_radius = (outer_equatorial_point + inner_equatorial_point) / 2
+    minor_radius = major_radius - inner_equatorial_point
+
+    # vertical build
+    elongation = (plasma_vertical_thickness / 2) / minor_radius
+    blanket_rear_wall_end_height = sum([item[1] for item in vertical_build])
+
+    plasma = plasma_simplified(
+        major_radius=major_radius,
+        minor_radius=minor_radius,
+        elongation=elongation,
+        triangularity=triangularity,
+        rotation_angle=rotation_angle,
+    )
+
+    inner_radial_build = create_center_column_shield_cylinders(
+        radial_build=radial_build,
+        vertical_build=vertical_build,
+        rotation_angle=rotation_angle,
+    )
+
+    blanket_cutting_cylinder = center_column_shield_cylinder(
+        inner_radius=0,
+        thickness=sum_up_to_gap_before_plasma(radial_build),
+        rotation_angle=360,
+        height=2 * blanket_rear_wall_end_height,
+    )
+
+    blanket_layers = create_blanket_layers_after_plasma(
+        radial_build=radial_build,
+        vertical_build=vertical_build,
+        minor_radius=minor_radius,
+        major_radius=major_radius,
+        triangularity=triangularity,
+        elongation=elongation,
+        rotation_angle=rotation_angle,
+        center_column=blanket_cutting_cylinder,
+        layer_count=len(inner_radial_build)
+    )
+
+    cut_names, intersect_names, layer_names = get_assembly_names(
+        extra_cut_shapes, extra_intersect_shapes, inner_radial_build, blanket_layers
+    )
+
+    validate_unique_assembly_names([*cut_names, *intersect_names, *layer_names, "plasma"], "spherical_tokamak()")
+
+    my_assembly = Assembly()
+
+    for entry, name in zip(extra_cut_shapes, cut_names):
+        if not isinstance(entry, cq.Workplane):
+            raise ValueError(f"extra_cut_shapes should only contain cadquery Workplanes, not {type(entry)}")
+        my_assembly.add(entry, name=name, color=cq.Color(*colors.get(name, (0.5,0.5,0.5))))
+
+    # builds up the intersect shapes
+    if len(extra_intersect_shapes) > 0:
+        # makes a union of the the radial build to use as a base for the intersect shapes
+        reactor_compound = inner_radial_build[0]
+        for entry in inner_radial_build[1:] + blanket_layers:
+            reactor_compound = reactor_compound.union(entry)
+
+        # adds the extra intersect shapes to the assembly
+        for entry, name in zip(extra_intersect_shapes, intersect_names):
+            reactor_entry_intersection = entry.intersect(reactor_compound)
+            my_assembly.add(reactor_entry_intersection, name=name, color=cq.Color(*colors.get(name, (0.5,0.5,0.5))))
+
+    # cut the core layers with any extra shapes (a no-op when there are none)
+    cutters = extra_cut_shapes + extra_intersect_shapes
+    for entry, name in zip(inner_radial_build + blanket_layers, layer_names):
+        # TODO track the names of shapes, even when extra shapes are made due to splitting
+        for cutter in cutters:
+            entry = entry.cut(cutter)
+        my_assembly.add(entry, name=name, color=cq.Color(*colors.get(name, (0.5,0.5,0.5))))
+
+    my_assembly.add(plasma, name="plasma", color=cq.Color(*colors.get("plasma", (0.5,0.5,0.5))))
+
+    my_assembly.elongation = elongation
+    my_assembly.triangularity = triangularity
+    my_assembly.major_radius = major_radius
+    my_assembly.minor_radius = minor_radius
+
+    return my_assembly

@@ -1,0 +1,539 @@
+{
+  "variant": "baseline",
+  "variant_hash": "860455008c04b492e8e06afb8bb9e66a078df393c26e19074231e0a51d8699c1",
+  "elongation": 2.0,
+  "executed": true,
+  "elapsed_seconds": 80.75523841613904,
+  "input_identity": {
+    "model_id": "r2-tokamak-2026-09-05-a:model:paramak-tokamak-minimal",
+    "model_sha256": "9d08b94f40861848eebccb563326dfa9dbcc1eaf1cc643a96332582e53a62c1b",
+    "source_recipe_sha256": "6fb5e00d9f162e8c9664eda39ee1293103c67c68701ff83f36ece57a1b862b80",
+    "executed_recipe_sha256": "6fb5e00d9f162e8c9664eda39ee1293103c67c68701ff83f36ece57a1b862b80",
+    "environment_sha256": "36885ee5721e2c86d479f361b407aaf595959f590576e1c1cbd0e0acae61909b",
+    "parameters": {
+      "elongation": 2.0
+    },
+    "edit": null
+  },
+  "bounds_m": [
+    [
+      -8.099999997026757,
+      -1e-09,
+      -5.100000001973898
+    ],
+    [
+      8.099999997026757,
+      8.099999997026757,
+      5.100000001973898
+    ]
+  ],
+  "dimensions_m": [
+    16.199999994053513,
+    8.099999998026757,
+    10.200000003947796
+  ],
+  "expected_dimensions_m": [
+    16.2,
+    8.1,
+    10.2
+  ],
+  "components": [
+    {
+      "id": "layer_1",
+      "role": "Inboard cylindrical region",
+      "material_mapping_status": "unknown",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "bounds_m": [
+        [
+          -0.4,
+          0.0,
+          -5.1000000000000005
+        ],
+        [
+          0.4,
+          0.4,
+          5.1000000000000005
+        ]
+      ],
+      "volume_m3": 2.4033183799961857,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 2.4033183799961915,
+        "adaptive_1e_minus_7_m3": 2.4033183799961857,
+        "adaptive_1e_minus_9_m3": 2.4033183799961857,
+        "relative_convergence": 0.0,
+        "default_relative_difference": 2.4021618509237952e-15
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 0.0,
+        "relative_volume_error": 4.434760340167006e-14
+      },
+      "display": {
+        "vertices": 1012,
+        "triangles": 2020,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 2.4032561277041107,
+        "relative_volume_error": 2.590264052951424e-05,
+        "maximum_bound_error_m": 0.0,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 9.536743217353205e-08
+      }
+    },
+    {
+      "id": "layer_2",
+      "role": "Inboard cylindrical region",
+      "material_mapping_status": "unknown",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "bounds_m": [
+        [
+          -0.9,
+          0.0,
+          -5.1000000000000005
+        ],
+        [
+          0.9,
+          0.9,
+          5.1000000000000005
+        ]
+      ],
+      "volume_m3": 10.414379646650138,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 10.414379646650163,
+        "adaptive_1e_minus_7_m3": 10.414379646650138,
+        "adaptive_1e_minus_9_m3": 10.414379646650138,
+        "relative_convergence": 0.0,
+        "default_relative_difference": 2.3879478754745417e-15
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 0.0,
+        "relative_volume_error": 4.4006467990887986e-14
+      },
+      "display": {
+        "vertices": 1012,
+        "triangles": 2020,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 10.414109886717812,
+        "relative_volume_error": 2.590264052962795e-05,
+        "maximum_bound_error_m": 0.0,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 9.536743217353205e-08
+      }
+    },
+    {
+      "id": "layer_3",
+      "role": "Revolved shell region; material/function unassigned",
+      "material_mapping_status": "unknown",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "bounds_m": [
+        [
+          -6.799999997463914,
+          -1e-09,
+          -3.8000000018078004
+        ],
+        [
+          6.799999997463914,
+          6.799999997463914,
+          3.8000000018078
+        ]
+      ],
+      "volume_m3": 50.53826036273818,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 50.53833065982196,
+        "adaptive_1e_minus_7_m3": 50.53826208852263,
+        "adaptive_1e_minus_9_m3": 50.53826036273818,
+        "relative_convergence": 3.4148077873480437e-08,
+        "default_relative_difference": 1.3909676208904793e-06
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 9.000014067339634e-10,
+        "relative_volume_error": 1.6576151997483786e-13
+      },
+      "display": {
+        "vertices": 126588,
+        "triangles": 253176,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 50.529798531080665,
+        "relative_volume_error": 0.00016743416961285102,
+        "maximum_bound_error_m": 2.1198695319135652e-05,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 6.570585053822242e-08
+      }
+    },
+    {
+      "id": "layer_4",
+      "role": "Revolved shell region; material/function unassigned",
+      "material_mapping_status": "unknown",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "bounds_m": [
+        [
+          -7.999999997060404,
+          -1e-09,
+          -5.000000001965365
+        ],
+        [
+          7.999999997060404,
+          7.999999997060404,
+          5.000000001965365
+        ]
+      ],
+      "volume_m3": 372.00922111748207,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 372.00921974867646,
+        "adaptive_1e_minus_7_m3": 372.00922020849214,
+        "adaptive_1e_minus_9_m3": 372.00922111748207,
+        "relative_convergence": 2.4434607547708647e-09,
+        "default_relative_difference": 3.6794937736866477e-09
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 9.000213907484067e-10,
+        "relative_volume_error": 7.1205313431656e-14
+      },
+      "display": {
+        "vertices": 112722,
+        "triangles": 225444,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 371.9702757973602,
+        "relative_volume_error": 0.00010468912572883582,
+        "maximum_bound_error_m": 0.00028736570686049845,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 1.6415993986385047e-07
+      }
+    },
+    {
+      "id": "layer_5",
+      "role": "Revolved shell region; material/function unassigned",
+      "material_mapping_status": "unknown",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 6,
+      "edge_count": 12,
+      "bounds_m": [
+        [
+          -8.099999997026757,
+          -1e-09,
+          -5.100000001973898
+        ],
+        [
+          8.099999997026757,
+          8.099999997026757,
+          5.100000001973898
+        ]
+      ],
+      "volume_m3": 36.32300387668588,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 36.323023500633425,
+        "adaptive_1e_minus_7_m3": 36.32300335600562,
+        "adaptive_1e_minus_9_m3": 36.32300387668588,
+        "relative_convergence": 1.4334724671022934e-08,
+        "default_relative_difference": 5.40262242927688e-07
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 9.003198186974259e-10,
+        "relative_volume_error": 1.9229233122442583e-13
+      },
+      "display": {
+        "vertices": 113225,
+        "triangles": 226450,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 36.317681565958615,
+        "relative_volume_error": 0.0001465272736069579,
+        "maximum_bound_error_m": 9.469683895702019e-06,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 3.1738370154243967e-07
+      }
+    },
+    {
+      "id": "plasma",
+      "role": "Smooth analytic plasma volume; no equilibrium or X-points",
+      "material_mapping_status": "not_required_for_current_scope",
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 1,
+      "face_count": 3,
+      "edge_count": 3,
+      "bounds_m": [
+        [
+          -6.000000004200175,
+          -1e-09,
+          -3.000000001005178
+        ],
+        [
+          6.000000004200175,
+          6.000000004200175,
+          3.0000000010051786
+        ]
+      ],
+      "volume_m3": 184.12615735258618,
+      "volume_measurement": {
+        "method": "OCP BRepGProp.VolumePropertiesGK(Eps=1e-9,OnlyClosed=True,IsUseSpan=False)",
+        "default_nonadaptive_m3": 181.02851279904866,
+        "adaptive_1e_minus_7_m3": 184.12615859328284,
+        "adaptive_1e_minus_9_m3": 184.12615735258618,
+        "relative_convergence": 6.738296609736715e-09,
+        "default_relative_difference": 0.01682348992710357
+      },
+      "step_roundtrip": {
+        "valid": true,
+        "solid_count": 1,
+        "maximum_bound_error_m": 9.000000000000001e-10,
+        "relative_volume_error": 9.230726629913494e-14
+      },
+      "display": {
+        "vertices": 52711,
+        "triangles": 105418,
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_m3": 184.06277984132603,
+        "relative_volume_error": 0.0003442069946573645,
+        "maximum_bound_error_m": 4.182430046295593e-06,
+        "mesh_processing": "trimesh process=True merges coincident face-seam vertices; CAD geometry unmodified",
+        "glb_roundtrip_bound_error_m": 1.10109555695459e-07
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "a": "layer_1",
+      "b": "layer_2",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.0,
+      "intended_contact": true,
+      "observed_contact": true,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_1",
+      "b": "layer_3",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 1.7999999995756186,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_1",
+      "b": "layer_4",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.5999999995755713,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_1",
+      "b": "layer_5",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.4999999995755677,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_1",
+      "b": "plasma",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 2.5999999999999996,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_2",
+      "b": "layer_3",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 1.2999999995756186,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_2",
+      "b": "layer_4",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.09999999957557122,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_2",
+      "b": "layer_5",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 4.31946145518225e-17,
+      "intended_contact": true,
+      "observed_contact": true,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_2",
+      "b": "plasma",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 2.0999999999999996,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_3",
+      "b": "layer_4",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.0,
+      "intended_contact": true,
+      "observed_contact": true,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_3",
+      "b": "layer_5",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 1.1999999475139145,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_3",
+      "b": "plasma",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.5999992281093605,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_4",
+      "b": "layer_5",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.0,
+      "intended_contact": true,
+      "observed_contact": true,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_4",
+      "b": "plasma",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 0.7999992280732758,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    },
+    {
+      "a": "layer_5",
+      "b": "plasma",
+      "intersection_volume_m3": 0.0,
+      "minimum_distance_m": 1.9999992278567265,
+      "intended_contact": false,
+      "observed_contact": false,
+      "unintended_overlap": false
+    }
+  ],
+  "tolerances": {
+    "dimensional_m": 0.002,
+    "roundtrip_bound_m": 1e-05,
+    "roundtrip_relative_volume": 1e-07,
+    "intersection_m3": 1e-10,
+    "contact_distance_m": 1e-05,
+    "plasma_clearance_m": 0.002,
+    "display_bound_m": 0.003,
+    "display_relative_volume": 0.003,
+    "display_export_bound_m": 2e-06,
+    "adaptive_volume_relative_convergence": 1e-07,
+    "adaptive_volume_fine_epsilon": 1e-09,
+    "adaptive_volume_coarse_epsilon": 1e-07
+  },
+  "measurement_methods": {
+    "bounds": "OCP BRepBndLib.AddOptimal(useTriangulation=False,useShapeTolerance=False)",
+    "volumes": "Adaptive OCP BRepGProp.VolumePropertiesGK(Eps=1e-9), checked against 1e-7"
+  },
+  "checks": {
+    "adaptive_volume_convergence": true,
+    "native_topology_positive_volumes": true,
+    "component_mapping": true,
+    "source_dimensions": true,
+    "half_sector_y_nonnegative": true,
+    "z_symmetry": true,
+    "pairwise_no_unintended_overlap": true,
+    "intended_contacts_observed": true,
+    "plasma_shell_clearance": true,
+    "component_step_roundtrip": true,
+    "corrected_assembly_step_roundtrip": true,
+    "display_engineering_bounds_volumes": true,
+    "display_topology": true,
+    "display_roundtrip": true
+  },
+  "all_geometric_checks_passed": true,
+  "raw_step": {
+    "status": "failed_physical_units",
+    "header_declares": "mm",
+    "coordinate_meaning": "cm",
+    "raw_import_physical_dimensions_m": [
+      1.6199999994053171,
+      0.8099999998026733,
+      1.0200000003947793
+    ],
+    "raw_size_is_one_tenth_intended": true
+  },
+  "display_roundtrip": {
+    "component_ids": [
+      "layer_1",
+      "layer_2",
+      "layer_3",
+      "layer_4",
+      "layer_5",
+      "plasma"
+    ],
+    "maximum_bound_error_m": 3.1738370154243967e-07
+  },
+  "images_reviewed": true,
+  "analysis_readiness": "not_prepared",
+  "physical_validation": "not_assessed",
+  "visual_review_path": "research/fusion/reproductions/r6a-paramak/visual-review.json",
+  "visual_review_sha256": "9b25ae516f2a665eb3d7637dfa93d7b2df3ad6b0c0493100f6026b478d4fc2c3",
+  "fcr_public_projection": {
+    "source_sha256": "69a69664ad59d5c600a8aa47709035c310c8767d13cccda7272928279f3eda68",
+    "edits": "Private local locators removed; geometry and runtime records unchanged."
+  }
+}
