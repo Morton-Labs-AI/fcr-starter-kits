@@ -1,0 +1,20 @@
+# Dependabot: one grouped PR per ecosystem per week, so security fixes
+# in pinned dependencies, base images and Actions arrive without a hand bump.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /after-fusion
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      npm-after-fusion:
+        patterns: ["*"]
+  - package-ecosystem: pip
+    directory: /paramak/advanced/source
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      pip-paramak-advanced-source:
+        patterns: ["*"]
